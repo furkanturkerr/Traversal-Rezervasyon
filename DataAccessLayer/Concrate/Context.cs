@@ -8,7 +8,7 @@ public class Context : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "DESKTOP-2QRUQ1N\\MSSQLSERVER01; database = TravelRezervasyon; integrated security = true");
+            "Server=DESKTOP-2QRUQ1N\\MSSQLSERVER01; database = TravelRezervasyon; Integrated Security=True;TrustServerCertificate=True");
     }
 
     public DbSet<About> Abouts { get; set; }
