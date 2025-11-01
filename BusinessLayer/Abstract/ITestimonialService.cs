@@ -1,6 +1,8 @@
+using EntityLayer.Concrete;
+
 namespace BusinessLayer.Abstract;
 
-public interface ITestimonialService
+public interface ITestimonialService : IGenericService<Testimonial>
 {
     
 }

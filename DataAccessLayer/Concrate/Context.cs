@@ -19,5 +19,6 @@ public class Context : DbContext
     public DbSet<Feature2> Feature2s { get; set; }
     public DbSet<Guide> Guides { get; set; }
     public DbSet<Newsletter> Newsletters { get; set; }
+    public DbSet<SubAbout> SubAbouts { get; set; }
     public DbSet<Testimonial> Testimonials { get; set; }
 }
