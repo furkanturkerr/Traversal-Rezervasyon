@@ -18,12 +18,14 @@ public class DestinationController : Controller
     [HttpGet]
     public IActionResult Details(int id)
     {
-        return View();
+        var values = destinationManager.GetById(id);
+        return View(values);
     }
 
     [HttpPost]
     public IActionResult Details(Destination destination)
     {
+        
         return View();
     }
 }

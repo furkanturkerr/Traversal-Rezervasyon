@@ -5,6 +5,8 @@ namespace DataAccessLayer.Repository;
 
 public class GenericRepository<T> : IGenericDal<T> where T : class
 {
+    private IGenericDal<T> _genericDalImplementation;
+
     public void Insert(T t)
     {
         using var c = new Context();
@@ -30,5 +32,11 @@ public class GenericRepository<T> : IGenericDal<T> where T : class
     {
         using var c = new Context();
         return c.Set<T>().ToList();
+    }
+
+    public T GetById(int id)
+    {
+        using var c = new Context();
+        return c.Set<T>().Find(id);
     }
 }
