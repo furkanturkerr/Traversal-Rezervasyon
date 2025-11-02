@@ -136,7 +136,7 @@
                 <!--//author-card-->
 
 
-@await Component.InvokeAsync("_CommendList");
+                @await Component.InvokeAsync("_CommendList", new {id=ViewBag.i})
                 @await Component.InvokeAsync("_AddCommend");
    
             </div>

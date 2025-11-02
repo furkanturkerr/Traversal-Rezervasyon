@@ -1,3 +1,6 @@
+using System.Linq.Expressions;
+using System.Runtime.InteropServices.JavaScript;
+
 namespace DataAccessLayer.Abstract;
 
 public interface IGenericDal<T>
@@ -7,4 +10,5 @@ public interface IGenericDal<T>
     void Update(T t);
     List<T> GetList();
     T GetById(int id);
+    List<T> GetListByFilter(Expression<Func<T, bool>> filter);
 }

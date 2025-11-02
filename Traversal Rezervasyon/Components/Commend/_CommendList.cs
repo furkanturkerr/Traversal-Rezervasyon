@@ -1,11 +1,15 @@
+using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Traversal_Rezervasyon.Components.Commend;
 
 public class _CommendList : ViewComponent
 {
-    public IViewComponentResult Invoke()
+    private CommandManager _commandManager = new CommandManager(new EfCommendDal());
+    public IViewComponentResult Invoke(int id)
     {
-        return View();
+        var values = _commandManager.TGetDestinationBYıD(id);
+        return View(values);
     }
 }
