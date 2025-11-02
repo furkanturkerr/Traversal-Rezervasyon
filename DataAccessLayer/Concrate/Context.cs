@@ -20,5 +20,7 @@ public class Context : DbContext
     public DbSet<Guide> Guides { get; set; }
     public DbSet<Newsletter> Newsletters { get; set; }
     public DbSet<SubAbout> SubAbouts { get; set; }
+    
     public DbSet<Testimonial> Testimonials { get; set; }
+    public DbSet<Commend> Commends { get; set; }
 }
