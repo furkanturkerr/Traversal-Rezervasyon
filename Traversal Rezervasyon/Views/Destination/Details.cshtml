@@ -137,8 +137,7 @@
 
 
                 @await Component.InvokeAsync("_CommendList", new {id=ViewBag.i})
-                @await Component.InvokeAsync("_AddCommend");
-   
+                @await Html.PartialAsync("~/Views/Commant/AddCommend.cshtml")
             </div>
         </div>
     </div>

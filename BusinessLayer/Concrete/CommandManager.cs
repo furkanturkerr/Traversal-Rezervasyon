@@ -14,7 +14,7 @@ public class CommandManager : ICommandService
     }
     public void Add(Commend t)
     {
-        throw new NotImplementedException();
+        _commandDal.Insert(t);
     }
 
     public void Delete(Commend t)
