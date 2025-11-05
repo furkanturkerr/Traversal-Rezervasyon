@@ -21,36 +21,35 @@
 <div class="wrapper">
     <div class="inner">
         <img src="~/colorlib-regform-26/images/image-1.png" alt="" class="image-1">
-        <form action="">
-            <h3>Yeni Hesap Oluştuun</h3>
+        <form method="post">
+            <h3>Yeni Hesap Oluşturun</h3>
             <div class="form-holder">
                 <span class="lnr lnr-user"></span>
-                <input type="text" class="form-control" placeholder="Adınız">
+                <input type="text" class="form-control" placeholder="Adınız" name="Name">
             </div>
             <div class="form-holder">
                 <span class="lnr lnr-user"></span>
-                <input type="text" class="form-control" placeholder="Soyadınız">
+                <input type="text" class="form-control" placeholder="Soyadınız" name="Surname">
             </div>
             <div class="form-holder">
                 <span class="lnr lnr-envelope"></span>
-                <input type="text" class="form-control" placeholder="Mail Adresiniz">
+                <input type="text" class="form-control" placeholder="Mail Adresiniz" name="Mail">
             </div>
             <div class="form-holder">
                 <span class="lnr lnr-phone-handset"></span>
-                <input type="text" class="form-control" placeholder="Telefon Numaranız">
+                <input type="text" class="form-control" placeholder="Kullanıcı Adınız" name="UserName">
             </div>
             <div class="form-holder">
                 <span class="lnr lnr-lock"></span>
-                <input type="password" class="form-control" placeholder="Şifreniz">
+                <input type="password" class="form-control" placeholder="Şifreniz" name="Password">
             </div>
             <div class="form-holder">
                 <span class="lnr lnr-lock"></span>
-                <input type="password" class="form-control" placeholder="Şifre Tekar">
+                <input type="password" class="form-control" placeholder="Şifre Tekar" name="ConfirmPassword">
             </div>
             <button>
                 <span>Kayıt Ol</span>
             </button>
-            <a href="/Login/SıgnIn" class="btn btn-warning mt-5">Giriş Yap</a>
         </form>
         <img src="~/colorlib-regform-26/images/image-2.png" alt="" class="image-2">
     </div>
