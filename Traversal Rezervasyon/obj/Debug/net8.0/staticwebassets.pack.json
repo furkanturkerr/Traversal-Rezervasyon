@@ -1189,6 +1189,22 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\web\\css\\style.css",
+      "PackagePath": "staticwebassets\\web\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\web\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\web\\index.html",
+      "PackagePath": "staticwebassets\\web\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\web\\w3layouts-license.txt",
+      "PackagePath": "staticwebassets\\web\\w3layouts-license.txt"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Traversal Rezervasyon.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
