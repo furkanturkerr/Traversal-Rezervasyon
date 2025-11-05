@@ -31,18 +31,21 @@ public class LoginController : Controller
             Email = p.Mail,
             UserName = p.UserName,
         };
-        if (p.Password == p.ConfirmPassword)
+        if (ModelState.IsValid)
         {
-            var resault = await _userManager.CreateAsync(appUser, p.Password);
-            if (resault.Succeeded)
+            if (p.Password == p.ConfirmPassword)
             {
-                return RedirectToAction("SıgnIn", "Login");
-            }
-            else
-            {
-                foreach (var item in resault.Errors)
+                var resault = await _userManager.CreateAsync(appUser, p.Password);
+                if (resault.Succeeded)
                 {
-                    ModelState.AddModelError("", item.Description);
+                    return RedirectToAction("SıgnIn", "Login");
+                }
+                else
+                {
+                    foreach (var item in resault.Errors)
+                    {
+                        ModelState.AddModelError("", item.Description);
+                    }
                 }
             }
         }
