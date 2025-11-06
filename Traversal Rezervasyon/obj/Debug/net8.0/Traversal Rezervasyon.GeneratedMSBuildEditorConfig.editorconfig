@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Traversal_Rezervasyon
 build_property.RootNamespace = Traversal_Rezervasyon
@@ -17,6 +25,10 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Areas/Member/Views/Commend/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyXFZpZXdzXENvbW1lbmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Views/Commant/AddCommend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFudFxBZGRDb21tZW5kLmNzaHRtbA==
@@ -48,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Views/Login/SıgnUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU8SxZ25VcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Views/MemberLayoutPartial/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfSGVhZGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Views/MemberLayoutPartial/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfTmF2YmFyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Views/Shared/Components/_CommendList/Default.cshtml]
@@ -104,6 +124,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Views/Shared/_UILayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VSUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/Views/Shared/_ValidationScriptsPartial.cshtml]
