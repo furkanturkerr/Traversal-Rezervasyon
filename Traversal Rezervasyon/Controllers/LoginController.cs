@@ -9,9 +9,11 @@ namespace Traversal_Rezervasyon.Controllers;
 public class LoginController : Controller
 {
     private readonly UserManager<AppUser> _userManager;
+    private readonly SignInManager<AppUser> _signInManager;
 
-    public LoginController(UserManager<AppUser> userManager)
+    public LoginController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
     {
+        _signInManager = signInManager;
         _userManager = userManager;
     }
     
@@ -55,6 +57,24 @@ public class LoginController : Controller
     [HttpGet]
     public IActionResult SıgnIn()
     {
+        return View();
+    }
+    
+    [HttpPost]
+    public async Task  <IActionResult> SıgnIn(SıgnViewModel p)
+    {
+        if (ModelState.IsValid)
+        {
+            var result = await _signInManager.PasswordSignInAsync(p.UserName, p.Password, false, true);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "Destination");
+            }
+            else
+            {
+                return RedirectToAction("SıgnIn", "Login");
+            }
+        }
         return View();
     }
 }
