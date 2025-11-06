@@ -9,4 +9,5 @@ public class UserEditViewModel
     public string PhoneNumber { get; set; }
     public string imageUrl { get; set; }
     public string Mail { get; set; }
+    public IFormFile Image { get; set; }
 }

@@ -26,4 +26,30 @@ public class ProfileController : Controller
         userEditViewModel.PhoneNumber = values.PhoneNumber;
         return View(userEditViewModel);
     }
+    
+    [HttpPost]
+    public async Task<IActionResult> Index(UserEditViewModel p)
+    {
+        var user = await _userManager.FindByNameAsync(User.Identity.Name);
+        if (p.Image != null)
+        {
+            var resource = Directory.GetCurrentDirectory();
+            var extension = Path.GetExtension(p.Image.FileName);
+            var imageName = Guid.NewGuid() + extension;
+            var savelocaation = resource + "/wwwroot/userimages/" + imageName;
+            var stream = new FileStream(savelocaation, FileMode.Create);
+            await p.Image.CopyToAsync(stream);
+            user.ImageUrl = "/userimages/" + imageName;
+        }
+        user.Name = p.Name;
+        user.Surname = p.SurName;
+        user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, p.Pasword);
+        var result = await _userManager.UpdateAsync(user);
+        if (!result.Succeeded)
+        {
+            return RedirectToAction("SıgnIn", "Login");
+        }
+
+        return View();
+    }
 }

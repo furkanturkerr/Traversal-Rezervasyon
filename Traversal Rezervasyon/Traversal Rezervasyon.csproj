@@ -35,6 +35,7 @@
       <Folder Include="Areas\Member\Data\" />
       <Folder Include="Areas\Member\Pages\" />
       <Folder Include="Pages\" />
+      <Folder Include="wwwroot\userimages\" />
     </ItemGroup>
 
 </Project>

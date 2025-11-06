@@ -6,7 +6,7 @@
 
 <h1>Profilim</h1>
 
-<form method="post"> 
+<form method="post" enctype="multipart/form-data"> 
     @Html.Label("Adınız")
     <input type="text" asp-for="Name" class="form-control">
     <br/>
@@ -19,11 +19,17 @@
     @Html.Label("Telefon Numaranız")
     <input type="text" asp-for="PhoneNumber" class="form-control">
     <br/>
+    <div class="form-group">
+        <label>Resim Seçiniz</label>
+        <input type="file" asp-for="Image"/>
+    </div>
+    <br/>
     @Html.Label("Şifreniz")
     <input type="text" asp-for="Pasword" class="form-control">
     <br/>
     @Html.Label("Şifre Tekrar")
     <input type="text" asp-for="ConfirmPasword" class="form-control">
     <br/>
+    <button class="btn btn-primary">Kaydet</button>
 </form>
 
