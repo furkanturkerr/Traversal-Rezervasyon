@@ -36,4 +36,9 @@ public class RezervationManager : IRezervationService
     {
         throw new NotImplementedException();
     }
+
+    public List<Rezervation> GetListApprovalReservation(int id)
+    {
+        return _rezervationDal.GetListByFilter(x => x.AppUserId == id);
+    }
 }

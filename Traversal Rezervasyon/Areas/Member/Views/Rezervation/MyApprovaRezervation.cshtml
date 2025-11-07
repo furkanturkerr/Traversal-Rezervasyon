@@ -1,0 +1,27 @@
+@using EntityLayer.Concrete
+@model List<Rezervation>
+
+@{
+    Layout = "_UserLayout";
+}
+
+<h1>Onay Bekleyen Rezervasyonlar</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Lokasyon</th>
+        <th>Kişi Sayısı</th>
+        <th>Rezervason Tarihi</th>
+        <th>Durum</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.RezervationId</td>
+            <td>@item.Destination</td>
+            <td>@item.PersonCount</td>
+            <td>@item.RezervassyonDate</td>
+            <td>@item.Status</td>
+        </tr>
+    }
+</table>

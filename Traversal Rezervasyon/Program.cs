@@ -1,5 +1,10 @@
 using System.Net;
+using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
+using DataAccessLayer;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrate;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -11,6 +16,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<Context>();
+
+builder.Services.AddScoped<IRezervationService, RezervationManager>();
+builder.Services.AddScoped<IRezervationDal, EfRezervationDal>();
+
+builder.Services.AddScoped<IDestinationService, DestinationManager>();
+builder.Services.AddScoped<IDestinationDal, EfDestinationDal>();    
+
+
 
 
 

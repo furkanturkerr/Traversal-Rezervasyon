@@ -1,6 +1,8 @@
+using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -8,9 +10,17 @@ namespace Traversal_Rezervasyon.Areas.Member.Controllers;
 [Area("Member")]
 public class RezervationController : Controller
 {
-    private DestinationManager destinationManager = new DestinationManager(new EfDestinationDal());
-    
-    private RezervationManager rezervationManager = new RezervationManager(new EfRezervationDal());
+    private readonly IDestinationService _destinationService;
+    private readonly IRezervationService _rezervationService;
+    private readonly UserManager<AppUser> _userManager;
+
+    public RezervationController(IDestinationService destinationService, IRezervationService rezervationService,
+        UserManager<AppUser> userManager)
+    {
+        _destinationService = destinationService;
+        _rezervationService = rezervationService;
+        _userManager = userManager;
+    }
     
     public IActionResult MyCurrentRezervation()
     {
@@ -21,11 +31,19 @@ public class RezervationController : Controller
     {
         return View();
     }
+
+
+    public async Task<IActionResult> MyApprovaRezervation()
+    {
+        var values = await _userManager.FindByNameAsync(User.Identity.Name);
+        var valuesList = _rezervationService.GetListApprovalReservation(values.Id);
+        return View(valuesList);
+    }
     
     [HttpGet]
     public IActionResult NewRezervation()
     {
-        List<SelectListItem> values = (from x in destinationManager.GetAll() select new SelectListItem
+        List<SelectListItem> values = (from x in _destinationService.GetAll() select new SelectListItem
         {
             Text = x.City,
             Value = x.DestinationId.ToString()
@@ -41,7 +59,7 @@ public class RezervationController : Controller
         {
             p.AppUserId = 3;
             p.Status = "Onay Bekliyor";
-            rezervationManager.Add(p);
+            _rezervationService.Add(p);
             return Json(new { success = true });
         }
         catch (Exception ex)
