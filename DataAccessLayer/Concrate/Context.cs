@@ -24,4 +24,6 @@ public class Context : IdentityDbContext<AppUser, AppRole, int>
     
     public DbSet<Testimonial> Testimonials { get; set; }
     public DbSet<Commend> Commends { get; set; }
+    
+    public DbSet<Rezervation> Rezervations { get; set; }
 }
