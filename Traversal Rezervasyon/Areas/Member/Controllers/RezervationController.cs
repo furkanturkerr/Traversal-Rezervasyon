@@ -37,9 +37,16 @@ public class RezervationController : Controller
     [HttpPost]
     public IActionResult NewRezervation(Rezervation p)
     {
-        p.AppUserId = 3;
-        p.Status = "False";
-        rezervationManager.Add(p);
-        return RedirectToAction("MyCurrentRezervation");
+        try
+        {
+            p.AppUserId = 3;
+            p.Status = "Onay Bekliyor";
+            rezervationManager.Add(p);
+            return Json(new { success = true });
+        }
+        catch (Exception ex)
+        {
+            return Json(new { success = false, message = ex.Message });
+        }
     }
 }
