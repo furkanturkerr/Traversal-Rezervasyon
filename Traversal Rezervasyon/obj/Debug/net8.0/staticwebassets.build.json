@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nNuT9H2UF2Z+MrQBbs+bK5GWXgsmAzjZ4KK43hJP6Q0=",
+  "Hash": "Eh2PVPsSLv49jJpd6maBG5/Z9jkrFTvamUyjTlMrVv0=",
   "Source": "Traversal Rezervasyon",
   "BasePath": "_content/Traversal Rezervasyon",
   "Mode": "Default",
@@ -11092,6 +11092,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\userimages\\ef0ff44f-b041-4660-b47d-c70600fc9bf2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\userimages\\furkan.webp",
+      "SourceId": "Traversal Rezervasyon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\",
+      "BasePath": "_content/Traversal Rezervasyon",
+      "RelativePath": "userimages/furkan.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\userimages\\furkan.webp"
     },
     {
       "Identity": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\web\\css\\style.css",
