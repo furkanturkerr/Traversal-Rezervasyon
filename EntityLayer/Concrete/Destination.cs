@@ -19,4 +19,5 @@ public class Destination
     public string Image2 { get; set; }
     
     public List<Commend> Commends { get; set; }
+    public List<Rezervation> Rezervations { get; set; }
 }

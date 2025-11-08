@@ -37,8 +37,18 @@ public class RezervationManager : IRezervationService
         throw new NotImplementedException();
     }
 
-    public List<Rezervation> GetListApprovalReservation(int id)
+    public List<Rezervation> GetListWithRezervationByWaitAppRoval(int id)
     {
-        return _rezervationDal.GetListByFilter(x => x.AppUserId == id);
+        return _rezervationDal.GetListWithRezervationByWaitAppRoval(id);
+    }
+
+    public List<Rezervation> GetListWithRezervationByPrevius(int id)
+    {
+        return _rezervationDal.GetListWithRezervationByPrevius(id);
+    }
+
+    public List<Rezervation> GetListWithRezervationByAccepted(int id)
+    {
+        return _rezervationDal.GetListWithRezervationByAccepted(id);
     }
 }

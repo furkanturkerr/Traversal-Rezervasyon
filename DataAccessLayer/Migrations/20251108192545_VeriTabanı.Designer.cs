@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20251105202459_Gender_notnull")]
-    partial class Gender_notnull
+    [Migration("20251108192545_VeriTabanı")]
+    partial class VeriTabanı
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -146,7 +146,6 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
@@ -435,6 +434,43 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Newsletters");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Rezervation", b =>
+                {
+                    b.Property<int>("RezervationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RezervationId"));
+
+                    b.Property<int>("AppUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DestinationId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PersonCount")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("RezervassyonDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RezervationId");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("DestinationId");
+
+                    b.ToTable("Rezervations");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.SubAbout", b =>
                 {
                     b.Property<int>("SubAboutId")
@@ -602,6 +638,25 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Destination");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Rezervation", b =>
+                {
+                    b.HasOne("EntityLayer.Concrete.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityLayer.Concrete.Destination", "Destination")
+                        .WithMany("Rezervations")
+                        .HasForeignKey("DestinationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Destination");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.HasOne("EntityLayer.Concrete.AppRole", null)
@@ -656,6 +711,8 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("EntityLayer.Concrete.Destination", b =>
                 {
                     b.Navigation("Commends");
+
+                    b.Navigation("Rezervations");
                 });
 #pragma warning restore 612, 618
         }

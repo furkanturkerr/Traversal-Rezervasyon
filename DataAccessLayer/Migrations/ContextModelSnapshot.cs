@@ -446,18 +446,14 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Destination")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("DestinationId")
+                        .HasColumnType("int");
 
                     b.Property<int>("PersonCount")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("RezervassyonDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<int?>("RezervationId1")
-                        .HasColumnType("int");
 
                     b.Property<string>("Status")
                         .IsRequired()
@@ -467,7 +463,7 @@ namespace DataAccessLayer.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.HasIndex("RezervationId1");
+                    b.HasIndex("DestinationId");
 
                     b.ToTable("Rezervations");
                 });
@@ -647,11 +643,15 @@ namespace DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EntityLayer.Concrete.Rezervation", null)
-                        .WithMany("RezervationS")
-                        .HasForeignKey("RezervationId1");
+                    b.HasOne("EntityLayer.Concrete.Destination", "Destination")
+                        .WithMany("Rezervations")
+                        .HasForeignKey("DestinationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("AppUser");
+
+                    b.Navigation("Destination");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -708,11 +708,8 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("EntityLayer.Concrete.Destination", b =>
                 {
                     b.Navigation("Commends");
-                });
 
-            modelBuilder.Entity("EntityLayer.Concrete.Rezervation", b =>
-                {
-                    b.Navigation("RezervationS");
+                    b.Navigation("Rezervations");
                 });
 #pragma warning restore 612, 618
         }

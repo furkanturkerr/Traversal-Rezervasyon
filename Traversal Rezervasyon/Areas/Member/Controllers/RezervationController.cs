@@ -22,21 +22,25 @@ public class RezervationController : Controller
         _userManager = userManager;
     }
     
-    public IActionResult MyCurrentRezervation()
+    public async Task<IActionResult> MyCurrentRezervation()
     {
-        return View();
+        var values = await _userManager.FindByNameAsync(User.Identity.Name);
+        var valuesList = _rezervationService.GetListWithRezervationByAccepted(values.Id);
+        return View(valuesList);
     }
     
-    public IActionResult MyOldRezervation()
+    public async Task<IActionResult> MyOldRezervation()
     {
-        return View();
+        var values = await _userManager.FindByNameAsync(User.Identity.Name);
+        var valuesList = _rezervationService.GetListWithRezervationByPrevius(values.Id);
+        return View(valuesList);
     }
 
 
     public async Task<IActionResult> MyApprovaRezervation()
     {
         var values = await _userManager.FindByNameAsync(User.Identity.Name);
-        var valuesList = _rezervationService.GetListApprovalReservation(values.Id);
+        var valuesList = _rezervationService.GetListWithRezervationByWaitAppRoval(values.Id);
         return View(valuesList);
     }
     

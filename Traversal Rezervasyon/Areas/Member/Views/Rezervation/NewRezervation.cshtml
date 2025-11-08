@@ -8,6 +8,7 @@
 
 
 <form method="post" id="reservationForm">
+    
     <div class="form-group">
         @Html.Label("Lokasyon")
         @Html.DropDownListFor(x => x.Destination, (List<SelectListItem>)ViewBag.v, new { @class = "form-control", @id = "destination" })

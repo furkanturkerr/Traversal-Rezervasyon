@@ -4,5 +4,7 @@ namespace BusinessLayer.Abstract;
 
 public interface IRezervationService : IGenericService<Rezervation>
 {
-    List<Rezervation> GetListApprovalReservation(int id);
+    List<Rezervation> GetListWithRezervationByWaitAppRoval(int id);
+    List<Rezervation> GetListWithRezervationByPrevius(int id);
+    List<Rezervation> GetListWithRezervationByAccepted(int id);
 }

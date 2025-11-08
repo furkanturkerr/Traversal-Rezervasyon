@@ -1,8 +1,34 @@
-@model dynamic
+@using EntityLayer.Concrete
+@model List<Rezervation>
 
 @{
     Layout = "_UserLayout";
 }
 
-<h1>Geçmiş Rezervasyonlarım</h1>
-
+<h1>Geçmiş Rezervasyonlar</h1>
+@if (!Model.Any())
+{
+    <div class="text-danger"><h4>Geçmiş Rezervasyon Yok</h4></div>
+}
+else
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>Lokasyon</th>
+            <th>Kişi Sayısı</th>
+            <th>Rezervason Tarihi</th>
+            <th>Durum</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.RezervationId</td>
+                <td>@item.Destination.City</td>
+                <td>@item.PersonCount</td>
+                <td>@item.RezervassyonDate</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+    </table>
+}
