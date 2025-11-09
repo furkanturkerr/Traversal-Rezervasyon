@@ -57,18 +57,23 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
+    name: "rezervationArea",
+    pattern: "{area:exists}/{controller=Rezervation}/{action=NewRezervation}/{id?}",
+    defaults: new { area = "Member" }  
+);
+
+app.MapControllerRoute(
+    name: "destinationArea",
+    pattern: "{area:exists}/{controller=Destination}/{action=Index}/{id?}",
+    defaults: new { area = "Admin" }   
+);
+
+app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Login}/{action=SıgnIn}/{id?}");
-
-app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Rezervation}/{action=NewRezervation}/{id?}"
+    pattern: "{controller=Login}/{action=SignIn}/{id?}"
 );
 
-app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Destination}/{action=Index}/{id?}"
-);
+
 
 
 app.Run();

@@ -25,14 +25,14 @@ public class DestinationController : Controller
     public IActionResult AddDestination(Destination destination)
     {
         destinationManager.Add(destination);
-        return RedirectToAction("Index");
+        return RedirectToAction("Index"); 
     }
     
     public IActionResult DeleteDestination(int id)
     {
         var value = destinationManager.GetById(id);
         destinationManager.Delete(value);
-        return RedirectToAction("Index");
+        return RedirectToAction("Index"); 
     }
     
     [HttpGet]
@@ -46,6 +46,6 @@ public class DestinationController : Controller
     public IActionResult UpdateDestination(Destination destination)
     {
         destinationManager.Edit(destination);
-        return RedirectToAction("Index");
+        return RedirectToAction("Index");  
     }
 }
