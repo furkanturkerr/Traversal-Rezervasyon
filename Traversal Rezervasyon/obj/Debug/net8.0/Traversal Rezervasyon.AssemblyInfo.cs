@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Traversal Rezervasyon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3f33c6572d4ca38bab48b47e86469f77e901be7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1760fda5f6a7d7792b10db83d7978c872d66ebe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Traversal Rezervasyon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Traversal Rezervasyon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
