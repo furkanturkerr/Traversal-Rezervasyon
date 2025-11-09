@@ -17,14 +17,15 @@ public class LoginController : Controller
         _userManager = userManager;
     }
     
+    [AllowAnonymous]
     [HttpGet]
-    public IActionResult SıgnUp()
+    public IActionResult SignUp()
     {
         return View();
     }
     
     [HttpPost]
-    public async Task<IActionResult> SıgnUp(UserRegisterViewModel p)
+    public async Task<IActionResult> SignUp(UserRegisterViewModel p)
     {
         AppUser appUser = new AppUser()
         {
@@ -40,7 +41,7 @@ public class LoginController : Controller
                 var resault = await _userManager.CreateAsync(appUser, p.Password);
                 if (resault.Succeeded)
                 {
-                    return RedirectToAction("SıgnIn", "Login");
+                    return RedirectToAction("SignIn", "Login");
                 }
                 else
                 {
@@ -53,15 +54,15 @@ public class LoginController : Controller
         }
         return View(p);
     }
-
+    [AllowAnonymous]
     [HttpGet]
-    public IActionResult SıgnIn()
+    public IActionResult SignIn()
     {
         return View();
     }
     
     [HttpPost]
-    public async Task  <IActionResult> SıgnIn(SıgnViewModel p)
+    public async Task  <IActionResult> SignIn(SıgnViewModel p)
     {
         if (ModelState.IsValid)
         {
@@ -72,7 +73,7 @@ public class LoginController : Controller
             }
             else
             {
-                return RedirectToAction("SıgnIn", "Login");
+                return RedirectToAction("SignIn", "Login");
             }
         }
         return View();
