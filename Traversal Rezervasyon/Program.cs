@@ -65,5 +65,10 @@ app.MapControllerRoute(
     pattern: "{area:exists}/{controller=Rezervation}/{action=NewRezervation}/{id?}"
 );
 
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Destination}/{action=Index}/{id?}"
+);
+
 
 app.Run();
