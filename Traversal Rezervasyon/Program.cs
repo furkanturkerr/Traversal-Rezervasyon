@@ -33,6 +33,10 @@ builder.Services.AddScoped<IDestinationService, DestinationManager>();
 builder.Services.AddScoped<IDestinationDal, EfDestinationDal>();
 builder.Services.AddScoped<ICommandService, CommandManager>();
 builder.Services.AddScoped<ICommandDal, EfCommendDal>();
+builder.Services.AddScoped<IDestinationService, DestinationManager>();
+builder.Services.AddScoped<IDestinationDal, EfDestinationDal>();
+builder.Services.AddScoped<IAppUserService, AppUserManager>();
+builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
 
 builder.Services.AddMvc(config =>
 {
