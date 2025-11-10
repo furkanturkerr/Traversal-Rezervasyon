@@ -19,17 +19,17 @@ public class CommandManager : ICommandService
 
     public void Delete(Commend t)
     {
-        throw new NotImplementedException();
+        _commandDal.Delete(t);
     }
 
     public void Edit(Commend t)
     {
-        throw new NotImplementedException();
+        _commandDal.Update(t);
     }
 
     public List<Commend> GetAll()
     {
-        throw new NotImplementedException();
+        return _commandDal.GetList();
     }
 
     public List<Commend> TGetDestinationBYıD(int id)
@@ -37,8 +37,13 @@ public class CommandManager : ICommandService
         return _commandDal.GetListByFilter(x => x.DestinationId == id);
     }
 
+    public List<Commend> TGetListCommandWithDestination()
+    {
+        return _commandDal.GetListCommandWithDestination();
+    }
+
     public Commend GetById(int id)
     {
-        throw new NotImplementedException();
+        return _commandDal.GetById(id);
     }
 }

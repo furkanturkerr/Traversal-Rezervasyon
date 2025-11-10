@@ -31,6 +31,8 @@ builder.Services.AddScoped<IRezervationService, RezervationManager>();
 builder.Services.AddScoped<IRezervationDal, EfRezervationDal>();
 builder.Services.AddScoped<IDestinationService, DestinationManager>();
 builder.Services.AddScoped<IDestinationDal, EfDestinationDal>();
+builder.Services.AddScoped<ICommandService, CommandManager>();
+builder.Services.AddScoped<ICommandDal, EfCommendDal>();
 
 builder.Services.AddMvc(config =>
 {
