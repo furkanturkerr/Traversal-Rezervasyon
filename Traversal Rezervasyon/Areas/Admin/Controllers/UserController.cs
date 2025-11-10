@@ -7,8 +7,10 @@ namespace Traversal_Rezervasyon.Areas.Admin.Controllers;
 public class UserController : Controller
 {
     private readonly IAppUserService _appUserService;
-    public UserController(IAppUserService appUserService)
+    private readonly IRezervationService _rezervationService;
+    public UserController(IAppUserService appUserService, IRezervationService rezervationService)
     {
+        _rezervationService = rezervationService;
         _appUserService = appUserService;
     }
     
@@ -47,7 +49,7 @@ public class UserController : Controller
     
     public IActionResult RezervationUser(int id)
     {
-        var values = _appUserService.GetById(id);
+        var values = _rezervationService.GetListWithRezervationByAccepted(id);
         return View(values);
     }
 }

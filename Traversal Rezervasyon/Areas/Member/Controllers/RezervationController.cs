@@ -61,7 +61,7 @@ public class RezervationController : Controller
     {
         try
         {
-            p.AppUserId = 3;
+            p.AppUserId = 1;
             p.Status = "Onay Bekliyor";
             _rezervationService.Add(p);
             return Json(new { success = true });

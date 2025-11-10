@@ -7,7 +7,7 @@
 
 <h1>Kullanıcı Listesi</h1>
 <br/>
-<a href="/Admin/User/AddUser" class="btn btn-warning">Kullanıcı Ekle</a>
+<a href="/Login/SignUp" class="btn btn-warning">Kullanıcı Ekle</a>
 <br/>
 <table class="table table-bordered">
     <tr>
@@ -32,7 +32,7 @@
             <td><a onclick="return confirm('Bu kullanıcıyı silmek istediğinize emin misiniz?');" class="btn btn-outline-danger" href="/Admin/Command/DeleteUser/@item.Id">Sil</a></td>
             <td><a class="btn btn-outline-success" href="/Admin/Command/EditUser/@item.Id">Düzenle</a></td>
             <td><a class="btn btn-outline-info" href="/Admin/Command/CommandUser/@item.Id">Yorumlar</a></td>
-            <td><a class="btn btn-outline-primary" href="/Admin/Command/RezervationdUser/@item.Id">Tur Geçmişi</a></td>
+            <td><a class="btn btn-outline-primary" href="/Admin/User/RezervationUser/@item.Id">Tur Geçmişi</a></td>
         </tr>
     }
 </table>

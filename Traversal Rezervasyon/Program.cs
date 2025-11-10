@@ -1,5 +1,6 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using BusinessLayer.Container;
 using DataAccessLayer;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrate;
@@ -27,16 +28,8 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
-builder.Services.AddScoped<IRezervationService, RezervationManager>();
-builder.Services.AddScoped<IRezervationDal, EfRezervationDal>();
-builder.Services.AddScoped<IDestinationService, DestinationManager>();
-builder.Services.AddScoped<IDestinationDal, EfDestinationDal>();
-builder.Services.AddScoped<ICommandService, CommandManager>();
-builder.Services.AddScoped<ICommandDal, EfCommendDal>();
-builder.Services.AddScoped<IDestinationService, DestinationManager>();
-builder.Services.AddScoped<IDestinationDal, EfDestinationDal>();
-builder.Services.AddScoped<IAppUserService, AppUserManager>();
-builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
+builder.Services.ContainerDependencies();
+
 
 builder.Services.AddMvc(config =>
 {
