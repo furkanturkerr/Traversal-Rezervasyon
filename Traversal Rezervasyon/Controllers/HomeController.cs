@@ -15,11 +15,20 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        _logger.LogInformation("Index sayfası çağırıldı");
+        _logger.LogError("Error log çağırıldı");
         return View();
     }
 
     public IActionResult Privacy()
     {
+        _logger.LogInformation("Privacy sayfası çağırıldı");
+        return View();
+    }
+    
+    public IActionResult Test()
+    {
+        _logger.LogInformation("Test sayfası çağırıldı");
         return View();
     }
 

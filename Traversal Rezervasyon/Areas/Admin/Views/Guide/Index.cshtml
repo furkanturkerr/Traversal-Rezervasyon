@@ -6,6 +6,8 @@
     int count = 0;
 }
 
+
+
 <h1>Rehber Listesi</h1>
 <br />
 <a href="/Admin/Guide/AddGuide" class="btn btn-primary">Yeni Rehber Ekle</a>
@@ -24,7 +26,7 @@
         count++;
         <tr>
             <td>@count</td>           
-            <td><img src="@item.Image" height="50" width="50"/></td>
+            <td><img style="border-radius: 50%;" src="@item.Image" height="70" width="70"/></td>
             <td>@item.Name</td>
             <td>@item.Description</td>
                 @if (item.Status == true)

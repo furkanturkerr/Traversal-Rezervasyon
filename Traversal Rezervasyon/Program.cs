@@ -12,11 +12,24 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+// ?? Log dosyas?n?n yolu
+var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Logs", "log.txt");
+
+builder.Services.AddLogging(x =>
+{
+    x.ClearProviders();// Varsay?lan log sa?lay?c?lar?n? temizle
+    x.SetMinimumLevel(LogLevel.Debug);
+    x.AddDebug();// Debug output'a loglama
+});
+
+
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>();
 
 builder.Services
-    .AddIdentity<AppUser, AppRole>()
+    .AddIdentity<AppUser, AppRole>() 
     .AddEntityFrameworkStores<Context>()  
     .AddDefaultTokenProviders();
 

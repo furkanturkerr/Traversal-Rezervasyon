@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I3etXhEQckkks2PeXEKd0mh+DdCcK959u6HFRk/Sv3M=",
+  "Hash": "xaMUBcDPk1hNrOGsIrBaiFJ/lOnfNB3iYgFPldGxIiM=",
   "Source": "Traversal Rezervasyon",
   "BasePath": "_content/Traversal Rezervasyon",
   "Mode": "Default",
@@ -3587,6 +3587,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Login_v1\\vendor\\tilt\\tilt.jquery.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\Logs\\log.txt.cs",
+      "SourceId": "Traversal Rezervasyon",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\",
+      "BasePath": "_content/Traversal Rezervasyon",
+      "RelativePath": "Logs/log.txt.cs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Logs\\log.txt.cs"
     },
     {
       "Identity": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\404.html",

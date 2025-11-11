@@ -273,3 +273,8 @@ C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\Serilog.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
