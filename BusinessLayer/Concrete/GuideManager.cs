@@ -18,12 +18,12 @@ public class GuideManager : IGuideService
 
     public void Delete(Guide t)
     {
-        throw new NotImplementedException();
+        _guideDal.Delete(t);
     }
 
     public void Edit(Guide t)
     {
-        throw new NotImplementedException();
+        _guideDal.Update(t);
     }
 
     public List<Guide> GetAll()
@@ -33,6 +33,6 @@ public class GuideManager : IGuideService
 
     public Guide GetById(int id)
     {
-        throw new NotImplementedException();
+        return _guideDal.GetById(id);
     }
 }

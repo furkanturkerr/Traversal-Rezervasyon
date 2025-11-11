@@ -1189,6 +1189,38 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\404.html",
+      "PackagePath": "staticwebassets\\simple-404-template-master\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\LICENSE",
+      "PackagePath": "staticwebassets\\simple-404-template-master"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\README.md",
+      "PackagePath": "staticwebassets\\simple-404-template-master\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\simple-404-template-master\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\assets\\images\\404.svg",
+      "PackagePath": "staticwebassets\\simple-404-template-master\\assets\\images\\404.svg"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\favicon.png",
+      "PackagePath": "staticwebassets\\simple-404-template-master\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\screenshot\\dekstop-ss.png",
+      "PackagePath": "staticwebassets\\simple-404-template-master\\screenshot\\dekstop-ss.png"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\simple-404-template-master\\screenshot\\mobile-browser.png",
+      "PackagePath": "staticwebassets\\simple-404-template-master\\screenshot\\mobile-browser.png"
+    },
+    {
       "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\sneat-1.0.0\\.browserslistrc",
       "PackagePath": "staticwebassets\\sneat-1.0.0\\.browserslistrc"
     },
