@@ -1,5 +1,7 @@
 using BusinessLayer.Abstract;
+using BusinessLayer.ValidationRules;
 using EntityLayer.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Traversal_Rezervasyon.Areas.Admin.Controllers;
@@ -29,8 +31,21 @@ public class GuideController : Controller
     [HttpPost]
     public IActionResult AddGuide(Guide guide)
     {
-        _guideService.Add(guide);
-        return RedirectToAction("Index");
+        GuideValidator guideValidator = new GuideValidator();
+        ValidationResult result = guideValidator.Validate(guide);
+        if (result.IsValid)
+        {
+            _guideService.Add(guide);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            foreach (var item in result.Errors )
+            {
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+            }
+            return View();
+        }
     }
     
     [HttpGet]
