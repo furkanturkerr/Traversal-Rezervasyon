@@ -64,11 +64,13 @@ public class GuideController : Controller
 
     public IActionResult ChangtoTrue(int id)
     {
+        _guideService.TChangetoTrueByGuide(id);
         return RedirectToAction("Index");
     }
     
     public IActionResult ChangtoFalse(int id)
     {
+        _guideService.TChangetoFalseByGuide(id);
         return RedirectToAction("Index");
     }
 }

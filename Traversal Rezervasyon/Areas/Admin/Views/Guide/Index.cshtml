@@ -31,13 +31,13 @@
             <td>@item.Description</td>
                 @if (item.Status == true)
                 {
-                    <td><a href="" class="btn btn-outline-warning">Pasif Yap</a></td>
+                    <td><a href="~/Admin/Guide/ChangtoFalse/@item.GuideId" class="btn btn-outline-warning">Pasif Yap</a></td>
                 }
                 else
                 {
-                    <td><a href="" class="btn btn-outline-success">Aktif Yap</a></td>
+                    <td><a href="~/Admin/Guide/ChangtoTrue/@item.GuideId" class="btn btn-outline-success">Aktif Yap</a></td>
                 }
-            <td><a href="#" class="btn btn-outline-primary">Düzenle</a></td>
+            <td><a href="~/Admin/Guide/EditGuide/@item.GuideId" class="btn btn-outline-primary">Düzenle</a></td>
         </tr>
     }
 </table>
