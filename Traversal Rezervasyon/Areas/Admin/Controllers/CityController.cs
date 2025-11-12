@@ -1,3 +1,5 @@
+using BusinessLayer.Abstract;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Traversal_Rezervasyon.Models;
@@ -6,6 +8,12 @@ namespace Traversal_Rezervasyon.Areas.Admin.Controllers;
 [Area("Admin")]
 public class CityController : Controller
 {
+    private readonly IDestinationService _destinationService;
+
+    public CityController(IDestinationService destinationService)
+    {
+        _destinationService = destinationService;
+    }
     // GET
     public IActionResult Index()
     {
@@ -14,29 +22,29 @@ public class CityController : Controller
 
     public IActionResult CitiList()
     {
-        var jsonCİty = JsonConvert.SerializeObject(cities);
+        var jsonCİty = JsonConvert.SerializeObject(_destinationService.GetAll());
         return Json(jsonCİty);
     }
 
-    public static List<CityClass> cities = new List<CityClass>
+    [HttpPost]
+    public IActionResult AddCityDestination(Destination destination)
     {
-        new CityClass
-        {
-            CityId = 1,
-            CityName = "Üsküp",
-            CityContry = "Makedonya"
-        },
-        new CityClass
-        {
-            CityId = 2,
-            CityName = "Roma",
-            CityContry = "İtalya"
-        },
-        new CityClass
-        {
-            CityId = 3,
-            CityName = "Londra",
-            CityContry = "İngiltere"
-        }
-    };
+        destination.Status = true;
+        destination.CoverImage = "#";
+        destination.Details1 = "#";
+        destination.Details2 = "#";
+        destination.Image2 = "#";
+        destination.Image = "#";
+        destination.Description = "#";
+        _destinationService.Add(destination);
+        var values = JsonConvert.SerializeObject(destination); 
+        return Json(values);
+    }
+    
+    public IActionResult GetbyId(int id)
+    {
+        var values = _destinationService.GetById(id);
+        var json = JsonConvert.SerializeObject(values);
+        return Json(values);
+    }
 }
