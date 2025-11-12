@@ -36,15 +36,30 @@ public class CityController : Controller
         destination.Image2 = "#";
         destination.Image = "#";
         destination.Description = "#";
+
         _destinationService.Add(destination);
-        var values = JsonConvert.SerializeObject(destination); 
-        return Json(values);
+        return Json(destination);
     }
     
-    public IActionResult GetbyId(int id)
+    public IActionResult GetbyId(int DestinationId)
     {
-        var values = _destinationService.GetById(id);
+        var values = _destinationService.GetById(DestinationId);
         var json = JsonConvert.SerializeObject(values);
         return Json(values);
+    }
+
+    public IActionResult DeleteCity(int id)
+    {
+        var value = _destinationService.GetById(id);
+        _destinationService.Delete(value);
+        return NoContent();
+    }
+    
+    public IActionResult UpdateCity(Destination destination)
+    {
+        var values = _destinationService.GetById(destination.DestinationId);
+        _destinationService.Edit(destination);
+        var v = JsonConvert.SerializeObject(destination);
+        return Json(v);
     }
 }
