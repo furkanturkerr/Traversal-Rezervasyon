@@ -294,3 +294,5 @@ C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\MailKit.dll
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\MimeKit.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\DTOLayer.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\DTOLayer.pdb

@@ -26,7 +26,6 @@ public class DestinationController : Controller
     [HttpPost]
     public IActionResult Details(Destination destination)
     {
-        
         return View();
     }
 }

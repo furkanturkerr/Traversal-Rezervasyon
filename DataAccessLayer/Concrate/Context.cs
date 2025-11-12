@@ -1,3 +1,4 @@
+using System.Net.Mime;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -26,4 +27,6 @@ public class Context : IdentityDbContext<AppUser, AppRole, int>
     public DbSet<Commend> Commends { get; set; }
     
     public DbSet<Rezervation> Rezervations { get; set; }
+    
+    public DbSet<ContactUs> ContactUses { get; set; }
 }
