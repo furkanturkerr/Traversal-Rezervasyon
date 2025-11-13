@@ -1,4 +1,6 @@
+using AutoMapper;
 using BusinessLayer.Abstract;
+using DTOLayer.DTOs.AnnouncementDTOs;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using Traversal_Rezervasyon.Areas.Admin.Models;
@@ -8,24 +10,17 @@ namespace Traversal_Rezervasyon.Areas.Admin.Controllers;
 public class AnnouncementController : Controller
 {
     private readonly IAnnouncementService _announcementService;
-    public AnnouncementController(IAnnouncementService announcementService)
+    private readonly IMapper _mapper;
+    public AnnouncementController(IAnnouncementService announcementService, IMapper mapper)
     {
+        _mapper = mapper;
         _announcementService = announcementService;
     }
     
     public IActionResult Index()
     {
-        List<Announcement> announcements = _announcementService.GetAll();
-        List<AnnouncementAddListViewModel> model = new List<AnnouncementAddListViewModel>();
-        foreach (var item in announcements)
-        {
-            AnnouncementAddListViewModel announcementAddListViewModel = new AnnouncementAddListViewModel();
-            announcementAddListViewModel.Id = item.AnnouncementId;
-            announcementAddListViewModel.Title = item.Title;
-            announcementAddListViewModel.Cotent = item.Content;
-            model.Add(announcementAddListViewModel);
-        }
-        return View(model);
+        var values = _mapper.Map<List<AnnouncementAddListDto>>(_announcementService.GetAll());
+        return View(values);
     }
     
     [HttpGet]
@@ -35,8 +30,49 @@ public class AnnouncementController : Controller
     }
     
     [HttpPost]
-    public IActionResult AddAnnouncement(int id)
+    public IActionResult AddAnnouncement(AnnouncementAddDto model)
     {
-        return View();
+        if (ModelState.IsValid)
+        {
+            _announcementService.Add(new Announcement()
+            {
+                Content = model.Content,
+                Title = model.Title,
+                Date = Convert.ToDateTime(DateTime.Now.ToString("dd.MM.yyyy"))
+            });
+            return RedirectToAction("Index");
+        }
+        return View(model);
+    }
+
+    public IActionResult DeleteAnnouncement(int id)
+    {
+        var value = _announcementService.GetById(id);
+        _announcementService.Delete(value);
+        return RedirectToAction("Index");
+    }
+
+    [HttpGet]
+    public IActionResult UpdateAnnouncement(int id)
+    {
+        var value = _mapper.Map<AnnouncementUpdateDto>(_announcementService.GetById(id));
+        return View(value);
+    }
+    
+    [HttpPost]
+    public IActionResult UpdateAnnouncement(AnnouncementUpdateDto model)
+    {
+        if (ModelState.IsValid)
+        {
+            _announcementService.Edit(new Announcement()
+            {
+                AnnouncementId = model.AnnouncementId,
+                Content = model.Content,
+                Title = model.Title,
+                Date = Convert.ToDateTime(DateTime.Now.ToString("dd.MM.yyyy"))
+            });
+        }
+        
+        return View(model);
     }
 }

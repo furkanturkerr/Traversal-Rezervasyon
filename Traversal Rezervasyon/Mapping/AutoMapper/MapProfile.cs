@@ -14,8 +14,9 @@ public class MapProfile : Profile
     public MapProfile()
     {
         CreateMap<AppUserLoginDTOs, AppUser>().ReverseMap();
-        
-        CreateMap<AnnouncementAddDTOs, Announcement>().ReverseMap();
+        CreateMap<AnnouncementAddDto, Announcement>().ReverseMap();
+        CreateMap<AnnouncementUpdateDto, Announcement>().ReverseMap();
+        CreateMap<AnnouncementAddListDto, Announcement>().ReverseMap();
         CreateMap<AppUserRegisterDTOs, AppUser>().ReverseMap();
     }
     

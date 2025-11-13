@@ -1,14 +1,14 @@
-using DTOLayer.DTOs.AnnouncementDTOs;
 using EntityLayer.Concrete;
 using FluentValidation;
 
 namespace BusinessLayer.ValidationRules;
 
-public class AnnouncementValidator : AbstractValidator<AnnouncementAddDTOs>
+public class AnnouncmentUpdateValidation : AbstractValidator<Announcement>
 {
-    public AnnouncementValidator()
+    public AnnouncmentUpdateValidation ()
     {
         RuleFor(x => x.Content).NotEmpty().WithMessage("Boş geçilemez.");
         RuleFor(x => x.Title).NotEmpty().WithMessage("Boş geçilemez.");
+        RuleFor(x => x.Date).NotEmpty().WithMessage("Boş geçilemez.");
     }
 }

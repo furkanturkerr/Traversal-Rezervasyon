@@ -1,12 +1,6 @@
-using BusinessLayer.Abstract;
-using BusinessLayer.Concrete;
+using System.Globalization;
 using BusinessLayer.Container;
-using BusinessLayer.ValidationRules;
-using DataAccessLayer;
-using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrate;
-using DataAccessLayer.EntityFramework;
-using DTOLayer.DTOs.AnnouncementDTOs;
 using EntityLayer.Concrete;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -28,7 +22,6 @@ builder.Services.AddLogging(x =>
 });
 
 
-
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>();
 
@@ -48,7 +41,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 builder.Services.ContainerDependencies();
 
 builder.Services.AddAutoMapper(typeof(Program));
-builder.Services.AddTransient<IValidator<AnnouncementAddDTOs>, AnnouncementValidator>();
+builder.Services.CustomValidation();
 builder.Services.AddControllersWithViews().AddFluentValidation();
 
 builder.Services.AddMvc(config =>

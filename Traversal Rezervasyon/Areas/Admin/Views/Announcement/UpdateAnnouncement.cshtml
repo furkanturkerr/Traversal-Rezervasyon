@@ -1,0 +1,19 @@
+@model DTOLayer.DTOs.AnnouncementDTOs.AnnouncementUpdateDto
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Duyuru Güncelleme Sayfası</h1>
+<form method="post">
+    @Html.HiddenFor(x => x.AnnouncementId)
+    <label>Duyuru Başlığı</label>
+    <input type="text" asp-for="Title" class="form-control"/>
+    <span asp-validation-for="Title" class="text-danger"></span>
+    <br/>
+    <label>Duyuru İçeriği</label>
+    <input type="text" asp-for="Content" class="form-control"/>
+    <span asp-validation-for="Content" class="text-danger"></span>
+    <br/>
+    <button class="btn btn-success">Güncelle</button>
+</form>
