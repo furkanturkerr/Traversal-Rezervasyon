@@ -31,6 +31,9 @@ namespace BusinessLayer.Container
             
             services.AddScoped<IContactUsService, ContactUsManager>();
             services.AddScoped<IContactUsDal, EfContactUsDal>();
+            
+            services.AddScoped<IAnnouncementDal, EfAnnouncementDal>();
+            services.AddScoped<IAnnouncementService, AnnouncementManager>();
         }
     }
 }

@@ -22,11 +22,9 @@ public class Context : IdentityDbContext<AppUser, AppRole, int>
     public DbSet<Guide> Guides { get; set; }
     public DbSet<Newsletter> Newsletters { get; set; }
     public DbSet<SubAbout> SubAbouts { get; set; }
-    
     public DbSet<Testimonial> Testimonials { get; set; }
     public DbSet<Commend> Commends { get; set; }
-    
     public DbSet<Rezervation> Rezervations { get; set; }
-    
     public DbSet<ContactUs> ContactUses { get; set; }
+    public DbSet<Announcement> Announcements { get; set; }
 }
