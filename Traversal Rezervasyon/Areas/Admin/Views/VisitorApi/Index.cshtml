@@ -1,0 +1,35 @@
+@model System.Collections.Generic.List<Traversal_Rezervasyon.Areas.Admin.Models.VisitorViewModel>?
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Api Ziyarteçi Listesi</h1>
+<br/>
+<a href="~/Admin/VisitorApi/AddVisitor" class="btn btn-outline-dark">Ekle</a>
+<br/>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Şehir</th>
+        <th>Ülke</th>
+        <th>Mail</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.VisiterId</td>
+            <td>@item.Name</td>
+            <td>@item.SuName</td>
+            <td>@item.City</td>
+            <td>@item.Country</td>
+            <td>@item.Mail</td>
+            <td><a href="~/Admin/VisitorApi/DeleteVisitor/@item.VisiterId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="~/Admin/VisitorApi/UpdateVisitor/@item.VisiterId" class="btn btn-outline-warning">Güncelle</a></td>
+        </tr>
+    }
+</table>

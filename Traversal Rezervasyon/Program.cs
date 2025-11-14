@@ -21,6 +21,8 @@ builder.Services.AddLogging(x =>
     x.AddDebug();// Debug output'a loglama
 });
 
+builder.Services.AddHttpClient();
+
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>();

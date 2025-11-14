@@ -1,0 +1,28 @@
+@model Traversal_Rezervasyon.Areas.Admin.Models.VisitorViewModel
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Api ile Ziyaretçi Güncelleme</h1>
+
+<form method="post">
+    @Html.HiddenFor(x => x.VisiterId)
+    
+    <label>Ziyaretçi Adı</label>
+    <input type="text" name="Name" class="form-control" asp-for="Name"/>
+    <br/>
+    <label>Ziyaretçi Soyadı</label>
+    <input type="text" name="SuName" class="form-control" asp-for="SuName"/>
+    <br/>
+    <label>Ziyaretçi Mail Adresi</label>
+    <input type="text" name="Mail" class="form-control" asp-for="Mail"/>
+    <br/>
+    <label>Ziyaretçi Şehri</label>
+    <input type="text" name="City" class="form-control" asp-for="City"/>
+    <br/>
+    <label>Ziyaretçi Ülkesi</label>
+    <input type="text" name="Country" class="form-control" asp-for="Country"/>
+    <br/>
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form>
