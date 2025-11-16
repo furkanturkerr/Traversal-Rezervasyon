@@ -1,0 +1,18 @@
+@model Traversal_Rezervasyon.CQRS.Commands.GuideCommants.CreateGuideCommants
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Yeni Rehber Ekleme Sayfası</h1>
+<br/>
+
+<form method="post">
+    <label>Rehber Adı</label>
+    <input type="text" asp-for="Name" class="form-control"/>
+    <br/>
+    <label>Açıklaması</label>
+    <input type="text" asp-for="Name" class="form-control"/>
+    <br/>
+    <button class="btn btn-success">Kaydet</button>
+</form>

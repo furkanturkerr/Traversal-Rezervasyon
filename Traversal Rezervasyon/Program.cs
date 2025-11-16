@@ -4,6 +4,7 @@ using DataAccessLayer.Concrate;
 using EntityLayer.Concrete;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -20,6 +21,9 @@ builder.Services.AddScoped<GetDestinationByIdQueryHandler>();
 builder.Services.AddScoped<CreateDestinationComandHandler>();
 builder.Services.AddScoped<RemoveDestinationCommandHandler>();
 builder.Services.AddScoped<UpdateDestinationCommendHendler>();
+builder.Services.AddScoped<UpdateDestinationCommendHendler>();
+
+builder.Services.AddMediatR(typeof(Program));
 
 
 builder.Services.AddLogging(x =>

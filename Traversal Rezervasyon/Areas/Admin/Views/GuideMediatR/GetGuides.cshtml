@@ -1,0 +1,18 @@
+@model Traversal_Rezervasyon.CQRS.Results.GuideResults.GetGuideByIdQueryResult
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h2>Rehber Bilgi Düzenleme Sayfası</h2>
+
+<form method="post">
+    @Html.HiddenFor(x => x.GuideId)
+    <label>Reheber Adı</label>
+    <input type="text" name="Name" asp-for="Name" class="form-control"/>
+    <br/>
+    <label>Reheber Açıklaması</label>
+    <input type="text" name="Name" asp-for="Description" class="form-control"/>
+    <br/>
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form>

@@ -298,3 +298,6 @@ C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\DTOLayer.pdb
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\MediatR.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\Furkan\MY\Traversal Rezervasyon\Traversal Rezervasyon\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

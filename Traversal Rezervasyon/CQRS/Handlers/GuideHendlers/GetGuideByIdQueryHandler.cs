@@ -1,0 +1,25 @@
+using DataAccessLayer.Concrate;
+using MediatR;
+using Traversal_Rezervasyon.CQRS.Queries.GuideQueries;
+using Traversal_Rezervasyon.CQRS.Results.GuideResults;
+
+namespace Traversal_Rezervasyon.CQRS.Handlers.GuideHendlers;
+
+public class GetGuideByIdQueryHandler : IRequestHandler<GetGuideByIdQuery, GetGuideByIdQueryResult>
+{
+    private readonly Context _context;
+    public GetGuideByIdQueryHandler(Context context)
+    {
+        _context = context;
+    }
+    public async Task<GetGuideByIdQueryResult> Handle(GetGuideByIdQuery request, CancellationToken cancellationToken)
+    {
+        var values = await _context.Guides.FindAsync(request.id);
+        return new GetGuideByIdQueryResult
+        {
+            GuideId = values.GuideId,
+            Name = values.Name,
+            Description = values.Description
+        };
+    }
+}
