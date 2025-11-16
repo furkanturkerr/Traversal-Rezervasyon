@@ -961,6 +961,38 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\img\\ankara.webp",
+      "PackagePath": "staticwebassets\\img\\ankara.webp"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\img\\antalya.jpg",
+      "PackagePath": "staticwebassets\\img\\antalya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\img\\bursa.jpg",
+      "PackagePath": "staticwebassets\\img\\bursa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\img\\izmir.webp",
+      "PackagePath": "staticwebassets\\img\\izmir.webp"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\img\\kapadokya.jpg",
+      "PackagePath": "staticwebassets\\img\\kapadokya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\img\\mardin.jpeg",
+      "PackagePath": "staticwebassets\\img\\mardin.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\img\\rize.jpg",
+      "PackagePath": "staticwebassets\\img\\rize.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\img\\trabzon.jpg",
+      "PackagePath": "staticwebassets\\img\\trabzon.jpg"
+    },
+    {
       "Id": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\Traversal Rezervasyon\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
