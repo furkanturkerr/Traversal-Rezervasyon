@@ -1,0 +1,29 @@
+@model List<Traversal_Rezervasyon.Areas.Admin.Models.ApiMovieViewModel>
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Api IMDB Top 100 Film Listesi</h1>
+
+<br/>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Filmin Adı</th>
+        <th>IMDB Puanı</th>
+        <th>Yapım Yılı</th>
+        <th>Fragman</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.rank</th>
+            <th>@item.title</th>
+            <th>@item.rating</th>
+            <th>@item.year</th>
+            <th><a href="@item.trailer" class="btn btn-outline-warning">Fragmanı Aç</a></th>
+        </tr>
+    }
+</table>
+

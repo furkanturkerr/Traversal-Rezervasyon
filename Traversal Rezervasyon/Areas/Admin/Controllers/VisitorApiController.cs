@@ -41,7 +41,7 @@ public class VisitorApiController : Controller
         var jsonData = JsonConvert.SerializeObject(p);
         StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
         var responsemessage = await client.PostAsync("https://localhost:7001/api/Visitor", content);
-        if (responsemessage.IsSuccessStatusCode)
+         if (responsemessage.IsSuccessStatusCode)
         {
             return RedirectToAction("Index");
         }
