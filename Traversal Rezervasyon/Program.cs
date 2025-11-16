@@ -7,12 +7,15 @@ using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Traversal_Rezervasyon.CQRS.Handlers.DestinationResult;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 // ?? Log dosyas?n?n yolu
 var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Logs", "log.txt");
+
+builder.Services.AddScoped<GetAllDestinationQueryHandler>();
 
 builder.Services.AddLogging(x =>
 {
