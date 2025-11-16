@@ -16,6 +16,11 @@ var builder = WebApplication.CreateBuilder(args);
 var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Logs", "log.txt");
 
 builder.Services.AddScoped<GetAllDestinationQueryHandler>();
+builder.Services.AddScoped<GetDestinationByIdQueryHandler>();
+builder.Services.AddScoped<CreateDestinationComandHandler>();
+builder.Services.AddScoped<RemoveDestinationCommandHandler>();
+builder.Services.AddScoped<UpdateDestinationCommendHendler>();
+
 
 builder.Services.AddLogging(x =>
 {

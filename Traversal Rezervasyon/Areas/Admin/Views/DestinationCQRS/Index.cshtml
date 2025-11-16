@@ -7,7 +7,7 @@
 
 <h1>CQRS Tur Rotası Verileri</h1>
 
-<a href="/admin/destination/create" class="btn btn-primary">Yeni Tur Ekle</a>
+<a href="/Admin/DestinationCQRS/AddDestination" class="btn btn-primary">Yeni Tur Ekle</a>
 <br/>
 <table class="table table-bordered">
     <tr>
@@ -28,8 +28,8 @@
             <td>@item.daynight</td>
             <td>@item.price</td>
             <td>@item.capacity</td>
-            <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+            <td><a href="/Admin/DestinationCQRS/DeleteDestination/@item.id" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Admin/DestinationCQRS/GetDestinationById/@item.id" class="btn btn-outline-warning">Güncelle</a></td>
         </tr>
     }
 </table>

@@ -1,6 +1,6 @@
-namespace Traversal_Rezervasyon.CQRS.Results.DestinationResult;
+namespace Traversal_Rezervasyon.CQRS.Commands.DestinationCommand;
 
-public class GetDestinationByIdQueryResult
+public class UpdateDestinationCommend
 {
     public int Destinationid { get; set; }
     public string City { get; set; }

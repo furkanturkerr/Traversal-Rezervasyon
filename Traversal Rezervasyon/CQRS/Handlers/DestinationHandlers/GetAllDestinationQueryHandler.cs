@@ -19,7 +19,8 @@ public class GetAllDestinationQueryHandler
         var values = _context.Destinations.Select(x => new GetAllDestinationQueryReult
         {
             id = x.DestinationId,
-            capacity = x.City,
+            capacity = x.Capacity,
+            city = x.City,
             daynight = x.DayNight,
             price = x.Price
         }).AsNoTracking().ToList();

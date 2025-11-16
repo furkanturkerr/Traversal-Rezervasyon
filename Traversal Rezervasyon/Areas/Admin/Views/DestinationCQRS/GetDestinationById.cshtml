@@ -1,18 +1,22 @@
 @model Traversal_Rezervasyon.CQRS.Results.DestinationResult.GetDestinationByIdQueryResult
 
 @{
-    Layout = null;
+    Layout = "_AdminLayout";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+<h1>Lokasyon Düzenleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Destinationid"/>
+    <label>Şehir</label>
+    <input type="text" asp-for="City" class="form-control"/>
+    <br/>
+    <label>Gece - Gün</label>
+    <input type="text" asp-for="Daynight" class="form-control"/>
+    <br/>
+    <label>Fiyat</label>
+    <input type="text" asp-for="Price" class="form-control"/>
+    <br/>
+    <button class="btn btn-outline-dark">Güncelle</button>
+</form> 

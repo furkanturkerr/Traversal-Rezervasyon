@@ -6,5 +6,5 @@ public class GetAllDestinationQueryReult
     public string city { get; set; }
     public string daynight { get; set; }
     public double price { get; set; }
-    public string capacity { get; set; }
+    public int capacity { get; set; }
 }
