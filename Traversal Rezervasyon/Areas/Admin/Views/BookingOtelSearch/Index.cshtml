@@ -1,0 +1,31 @@
+@model IEnumerable<Traversal_Rezervasyon.Areas.Admin.Models.BookingOtelSearchViewModel.Results>
+
+@{
+    Layout = "_AdminLayout";
+    var count = 1;
+}
+<h1>Booking Otel Rezervasyon Sayfası</h1>
+<br/>
+<h3>Arama Yapılan Yer : Türkiye</h3>
+<br/>
+
+<table class="table table-striped">
+    <tr>
+        <th>#</th>
+        <th>Otel Adı</th>
+        <th>Otel Puanı</th>
+        <th>Otel Değerlendirmesi</th>
+        <th>Detaylar</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        count++;
+        <tr>
+            <td>@count</td>
+            <td>@item.name</td>
+            <td>@item.reviewScore</td>
+            <td>@item.reviewScoreWord</td>
+            <td><a href="#" class="btn btn-outline-dark">Detaylar</a></td>
+        </tr>
+    }
+</table>
