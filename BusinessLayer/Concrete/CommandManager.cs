@@ -42,6 +42,11 @@ public class CommandManager : ICommandService
         return _commandDal.GetListCommandWithDestination();
     }
 
+    public List<Commend> TGetListCommandWithUserandDestination(int id)
+    {
+        return _commandDal.GetListCommandWithUserandDestination(id);
+    }
+
     public Commend GetById(int id)
     {
         return _commandDal.GetById(id);

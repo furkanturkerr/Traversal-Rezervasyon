@@ -12,7 +12,7 @@ public class CommantController : Controller
     [HttpGet]
     public PartialViewResult AddCommend(int id)
     {
-        ViewBag.i = id;
+        ViewBag.destid = id;
         return PartialView();
     }
 

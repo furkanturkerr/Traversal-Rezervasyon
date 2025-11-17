@@ -20,6 +20,7 @@ public class DestinationController : Controller
     public IActionResult Details(int id)
     {
         ViewBag.i = id;
+        ViewBag.destid = id;
         var values = destinationManager.GetById(id);
         return View(values);
     }

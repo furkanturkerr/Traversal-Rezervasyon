@@ -97,7 +97,7 @@
 
 
                 @await Component.InvokeAsync("_CommendList", new {id=ViewBag.i})
-                @await Html.PartialAsync("~/Views/Commant/AddCommend.cshtml")
+                @await Html.PartialAsync("~/Views/Commant/AddCommend.cshtml", new {id = ViewBag.destid})
             </div>
         </div>
     </div>

@@ -6,4 +6,6 @@ public interface ICommandService : IGenericService<Commend>
 {
     List<Commend> TGetDestinationBYıD(int id);
     List<Commend> TGetListCommandWithDestination();
+    
+    List<Commend> TGetListCommandWithUserandDestination(int id);
 }

@@ -15,4 +15,12 @@ public class EfCommendDal : GenericRepository<Commend>, ICommandDal
             return c.Commends.Include(x => x.Destination).ToList();
         }
     }
+
+    public List<Commend> GetListCommandWithUserandDestination(int id)
+    {
+        using (var c = new Context())
+        {
+            return c.Commends.Where(x=>x.DestinationId==id).Include(x => x.AppUser).ToList();
+        }
+    }
 }
