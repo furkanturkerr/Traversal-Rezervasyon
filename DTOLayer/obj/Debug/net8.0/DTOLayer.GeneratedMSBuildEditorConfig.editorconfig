@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DTOLayer
-build_property.ProjectDir = C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\
+build_property.ProjectDir = /Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

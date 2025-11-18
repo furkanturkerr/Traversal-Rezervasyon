@@ -18,6 +18,10 @@ public class Destination
     public string Details2 { get; set; }
     public string Image2 { get; set; }
     
+    public DateTime Date { get; set; }
+
+    public int? GuideId { get; set; }
+    public Guide Guide { get; set; }
     public List<Commend> Commends { get; set; }
     public List<Rezervation> Rezervations { get; set; }
 }

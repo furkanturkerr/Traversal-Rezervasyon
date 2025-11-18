@@ -1,13 +1,26 @@
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\bin\Debug\net8.0\DTOLayer.deps.json
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\bin\Debug\net8.0\DTOLayer.dll
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\bin\Debug\net8.0\DTOLayer.pdb
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\DTOLayer.csproj.AssemblyReference.cache
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\DTOLayer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\DTOLayer.AssemblyInfoInputs.cache
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\DTOLayer.AssemblyInfo.cs
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\DTOLayer.csproj.CoreCompileInputs.cache
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\DTOLayer.sourcelink.json
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\DTOLayer.dll
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\refint\DTOLayer.dll
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\DTOLayer.pdb
-C:\Users\Furkan\MY\Traversal Rezervasyon\DTOLayer\obj\Debug\net8.0\ref\DTOLayer.dll
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/bin/Debug/net8.0/DTOLayer.deps.json
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/bin/Debug/net8.0/DTOLayer.dll
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/bin/Debug/net8.0/DTOLayer.pdb
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/DTOLayer.csproj.AssemblyReference.cache
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/DTOLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/DTOLayer.AssemblyInfoInputs.cache
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/DTOLayer.AssemblyInfo.cs
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/DTOLayer.csproj.CoreCompileInputs.cache
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/DTOLayer.sourcelink.json
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/DTOLayer.dll
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/refint/DTOLayer.dll
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/DTOLayer.pdb
+C:/Users/Furkan/MY/Traversal Rezervasyon/DTOLayer/obj/Debug/net8.0/ref/DTOLayer.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/bin/Debug/net8.0/DTOLayer.deps.json
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/bin/Debug/net8.0/DTOLayer.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/bin/Debug/net8.0/DTOLayer.pdb
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/DTOLayer.csproj.AssemblyReference.cache
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/DTOLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/DTOLayer.AssemblyInfoInputs.cache
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/DTOLayer.AssemblyInfo.cs
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/DTOLayer.csproj.CoreCompileInputs.cache
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/DTOLayer.sourcelink.json
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/DTOLayer.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/refint/DTOLayer.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/DTOLayer.pdb
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DTOLayer/obj/Debug/net8.0/ref/DTOLayer.dll

@@ -13,7 +13,7 @@ public class _GuideDetails : ViewComponent
     
     public IViewComponentResult Invoke()
     {
-        var guide = _guideService.GetById(2);
+        var guide = _guideService.GetById(1);
         return View(guide);
     }
 }

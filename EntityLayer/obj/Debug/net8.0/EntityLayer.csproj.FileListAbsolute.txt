@@ -1,15 +1,30 @@
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\bin\Debug\net8.0\EntityLayer.deps.json
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\bin\Debug\net8.0\EntityLayer.runtimeconfig.json
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\bin\Debug\net8.0\EntityLayer.dll
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\bin\Debug\net8.0\EntityLayer.pdb
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.AssemblyReference.cache
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfoInputs.cache
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfo.cs
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.CoreCompileInputs.cache
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.sourcelink.json
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.dll
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\refint\EntityLayer.dll
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\EntityLayer.genruntimeconfig.cache
-C:\Users\Furkan\MY\Traversal Rezervasyon\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/bin/Debug/net8.0/EntityLayer.deps.json
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/bin/Debug/net8.0/EntityLayer.runtimeconfig.json
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/bin/Debug/net8.0/EntityLayer.dll
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/bin/Debug/net8.0/EntityLayer.pdb
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.csproj.AssemblyReference.cache
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.AssemblyInfoInputs.cache
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.AssemblyInfo.cs
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.csproj.CoreCompileInputs.cache
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.sourcelink.json
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.dll
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/refint/EntityLayer.dll
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.pdb
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/EntityLayer.genruntimeconfig.cache
+C:/Users/Furkan/MY/Traversal Rezervasyon/EntityLayer/obj/Debug/net8.0/ref/EntityLayer.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/bin/Debug/net8.0/EntityLayer.deps.json
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/bin/Debug/net8.0/EntityLayer.runtimeconfig.json
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/bin/Debug/net8.0/EntityLayer.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/bin/Debug/net8.0/EntityLayer.pdb
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.AssemblyInfo.cs
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.sourcelink.json
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/refint/EntityLayer.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.pdb
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/EntityLayer.genruntimeconfig.cache
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/Debug/net8.0/ref/EntityLayer.dll

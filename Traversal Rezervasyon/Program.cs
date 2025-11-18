@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Runtime.InteropServices;
 using BusinessLayer.Container;
 using DataAccessLayer.Concrate;
 using EntityLayer.Concrete;
@@ -8,6 +9,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.EntityFrameworkCore;
 using Traversal_Rezervasyon.CQRS.Handlers.DestinationResult;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,7 +39,22 @@ builder.Services.AddHttpClient();
 
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<Context>();
+//builder.Services.AddDbContext<Context>();
+
+var providerSetting = builder.Configuration["DatabaseProvider"];
+var isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
+builder.Services.AddDbContext<Context>(options =>
+{
+    if (providerSetting == "SqlServer" && isWindows)
+    {
+        options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
+    }
+    else
+    {
+        // Mac + Linux varsayılan: Postgres
+        options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres"));
+    }
+});
 
 builder.Services
     .AddIdentity<AppUser, AppRole>() 
@@ -73,6 +90,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
 app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404/", "?code={0}");
 app.UseHttpsRedirection();
 app.UseStaticFiles();

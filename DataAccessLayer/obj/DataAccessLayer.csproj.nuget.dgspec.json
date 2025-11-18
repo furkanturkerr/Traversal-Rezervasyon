@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DataAccessLayer/DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DataAccessLayer/DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DataAccessLayer/DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\DataAccessLayer\\obj\\",
+        "projectPath": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DataAccessLayer/DataAccessLayer.csproj",
+        "packagesPath": "/Users/furkanturker/.nuget/packages/",
+        "outputPath": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/DataAccessLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/furkanturker/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\EntityLayer\\EntityLayer.csproj"
+              "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/EntityLayer.csproj": {
+                "projectPath": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/EntityLayer.csproj"
               }
             }
           }
@@ -47,10 +47,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.3.1, )"
-            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -74,6 +70,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -92,21 +96,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\EntityLayer\\EntityLayer.csproj": {
+    "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\EntityLayer\\EntityLayer.csproj",
-        "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan\\MY\\Traversal Rezervasyon\\EntityLayer\\obj\\",
+        "projectPath": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/EntityLayer.csproj",
+        "packagesPath": "/Users/furkanturker/.nuget/packages/",
+        "outputPath": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/EntityLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/furkanturker/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -135,10 +139,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity": {
-              "target": "Package",
-              "version": "[2.3.1, )"
-            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -162,6 +162,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -180,7 +188,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
