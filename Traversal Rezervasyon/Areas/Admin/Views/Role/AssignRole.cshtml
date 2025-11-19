@@ -1,0 +1,20 @@
+@model System.Collections.Generic.List<Traversal_Rezervasyon.Areas.Admin.Models.RoleAssignViewModel>
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Role Atama Sayfası</h1>
+
+<form method="post">
+    @for(int i = 0; i < Model.Count; i++)
+    {
+        <div class="form-control">
+            <input type="hidden" asp-for="@Model[i].Roleid"/>
+            <input type="hidden" asp-for="@Model[i].RoleName"/>
+            <input type="checkbox" asp-for="@Model[i].RoleExist" class="form-check-input"/>
+            <label class="form-check-label" for="@Model[i].RoleExist">@Model[i].RoleName</label>
+        </div>
+    }
+    <button class="btn btn-outline-danger">Değişiklikleri Kaydet</button>
+</form>
