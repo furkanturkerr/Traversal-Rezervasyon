@@ -3,6 +3,7 @@ using DocumentFormat.OpenXml.Bibliography;
 using DTOLayer.DTOs.AnnouncementDTOs;
 using DTOLayer.DTOs.AppUserDTOs;
 using DTOLayer.DTOs.CityDTOs;
+using DTOLayer.DTOs.ContactDTOs;
 using EntityLayer.Concrete;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using Traversal_Rezervasyon.Controllers;
@@ -18,6 +19,7 @@ public class MapProfile : Profile
         CreateMap<AnnouncementUpdateDto, Announcement>().ReverseMap();
         CreateMap<AnnouncementAddListDto, Announcement>().ReverseMap();
         CreateMap<AppUserRegisterDTOs, AppUser>().ReverseMap();
+        CreateMap<SendMessageDTO, ContactUs>().ReverseMap();
     }
     
 }

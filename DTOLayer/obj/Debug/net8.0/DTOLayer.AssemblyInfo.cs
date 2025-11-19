@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DTOLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69f99f676e42ae31bb972c092fb9b4e7e2f16c33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca43c2cb68e7f0a7500a0432bed2a372fe4d8a17")]
 [assembly: System.Reflection.AssemblyProductAttribute("DTOLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DTOLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

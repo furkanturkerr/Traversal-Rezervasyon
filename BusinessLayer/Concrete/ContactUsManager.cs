@@ -13,7 +13,7 @@ public class ContactUsManager : IContactUsService
     }
     public void Add(ContactUs t)
     {
-        throw new NotImplementedException();
+        _contactUsDal.Insert(t);
     }
 
     public void Delete(ContactUs t)
