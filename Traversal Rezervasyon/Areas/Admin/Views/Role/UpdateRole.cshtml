@@ -1,0 +1,16 @@
+@model Traversal_Rezervasyon.Areas.Admin.Models.UpdateRoleVİewModel
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Role Düzenleme Sayfası</h1>
+
+
+<form method="post">
+    <input  type="hidden" asp-for="RoleId"/>
+    <label>Rol Adı</label>
+    <input type="text" asp-for="RoleName" class="form-control"/>
+    <br/>
+    <button class="btn btn-outline-warning">Güncelle</button>
+</form>

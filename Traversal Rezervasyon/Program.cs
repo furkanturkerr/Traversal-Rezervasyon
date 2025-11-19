@@ -37,6 +37,10 @@ builder.Services.AddLogging(x =>
 
 builder.Services.AddHttpClient();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login/SignIn";
+});
 
 builder.Services.AddControllersWithViews();
 //builder.Services.AddDbContext<Context>();
@@ -68,6 +72,8 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.LogoutPath = "/Login/Logout";
     options.SlidingExpiration = true;
 });
+
+
 
 builder.Services.ContainerDependencies();
 
@@ -101,15 +107,9 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "rezervationArea",
+    name: "areas",
     pattern: "{area:exists}/{controller=Rezervation}/{action=NewRezervation}/{id?}",
     defaults: new { area = "Member" }
-);
-
-app.MapControllerRoute(
-    name: "destinationArea",
-    pattern: "{area:exists}/{controller=Destination}/{action=Index}/{id?}",
-    defaults: new { area = "Admin" }
 );
 
 app.MapControllerRoute(
