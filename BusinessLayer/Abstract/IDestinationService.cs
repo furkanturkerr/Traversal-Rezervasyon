@@ -4,6 +4,6 @@ namespace BusinessLayer.Abstract;
 
 public interface IDestinationService : IGenericService<Destination>
 {
-    public List<Destination> TGetListWithGuide(int id);
+    public Destination TGetListWithGuide(int id);
 
 }

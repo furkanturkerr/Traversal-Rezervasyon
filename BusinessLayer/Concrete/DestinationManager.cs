@@ -38,7 +38,7 @@ public class DestinationManager : IDestinationService
         return _destinationDal.GetById(id);
     }
 
-    public List<Destination> TGetListWithGuide(int id)
+    public Destination TGetListWithGuide(int id)
     {
         return _destinationDal.GetListWithGuide(id);
     }
