@@ -1,0 +1,14 @@
+@model Traversal_Rezervasyon.Areas.Admin.Models.CreateRoleModel
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<h1>Role Ekleme Sayfaı</h1>
+
+<form method="post">
+    <label>Role Adını Giriniz</label>
+    <input type="text" asp-for="RoleName" class="form-control"/>
+    <br/>
+    <button class="btn btn-outline-warning">Ekle</button>
+</form>
