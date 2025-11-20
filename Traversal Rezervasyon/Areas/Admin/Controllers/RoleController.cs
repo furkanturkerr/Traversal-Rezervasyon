@@ -35,6 +35,7 @@ public class RoleController : Controller
     public async Task<IActionResult> AssignRole(int id)
     {
         var user = _userManager.Users.FirstOrDefault(x => x.Id == id);
+        TempData["UserId"] = user.Id;
         var roles = _roleManager.Roles.ToList();
         var values = await _userManager.GetRolesAsync(user);
         List<RoleAssignViewModel> roleAssignViewModels = new List<RoleAssignViewModel>();
@@ -47,6 +48,27 @@ public class RoleController : Controller
         }
         return View(roleAssignViewModels);
     }
+
+    [HttpPost]
+    [Route("AssignRole/{id}")]
+    public async Task<IActionResult> AssignRole(List<RoleAssignViewModel> model)
+    {
+        var userid = (int)TempData["UserId"];
+        var user = _userManager.Users.FirstOrDefault(x=>x.Id == userid);
+        foreach (var role in model)
+        {
+            if (role.RoleExist)
+            {
+                await _userManager.AddToRoleAsync(user, role.RoleName);
+            }
+            else
+            {
+                await _userManager.RemoveFromRoleAsync(user, role.RoleName);
+            }
+        }
+        return RedirectToAction("UserList");
+    }
+    
     
     [Route("CreateRole")]
     [HttpGet]
@@ -101,4 +123,6 @@ public class RoleController : Controller
         await _roleManager.UpdateAsync(values);
         return RedirectToAction("Index");
     }
+    
+    
 }
