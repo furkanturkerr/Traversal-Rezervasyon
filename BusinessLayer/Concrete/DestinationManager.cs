@@ -42,4 +42,9 @@ public class DestinationManager : IDestinationService
     {
         return _destinationDal.GetListWithGuide(id);
     }
+
+    public List<Destination> TGetLast4Destinations()
+    {
+        return _destinationDal.GetLast4Destinations();
+    }
 }

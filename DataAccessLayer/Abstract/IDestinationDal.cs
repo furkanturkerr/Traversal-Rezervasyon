@@ -6,4 +6,5 @@ namespace DataAccessLayer;
 public interface IDestinationDal : IGenericDal<Destination>
 {
     public Destination GetListWithGuide(int id);
+    public List<Destination> GetLast4Destinations();
 }
