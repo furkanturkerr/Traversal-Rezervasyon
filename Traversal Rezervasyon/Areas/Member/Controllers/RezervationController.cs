@@ -71,4 +71,6 @@ public class RezervationController : Controller
             return Json(new { success = false, message = ex.Message });
         }
     }
+    
+    
 }

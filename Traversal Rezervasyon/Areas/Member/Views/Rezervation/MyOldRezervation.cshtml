@@ -2,33 +2,60 @@
 @model List<Rezervation>
 
 @{
-    Layout = "_UserLayout";
+    Layout = "_MemberLayout";
 }
 
-<h1>Geçmiş Rezervasyonlar</h1>
-@if (!Model.Any())
-{
-    <div class="text-danger"><h4>Geçmiş Rezervasyon Yok</h4></div>
-}
-else
-{
-    <table class="table table-bordered">
-        <tr>
-            <th>#</th>
-            <th>Lokasyon</th>
-            <th>Kişi Sayısı</th>
-            <th>Rezervason Tarihi</th>
-            <th>Durum</th>
-        </tr>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.RezervationId</td>
-                <td>@item.Destination.City</td>
-                <td>@item.PersonCount</td>
-                <td>@item.RezervassyonDate</td>
-                <td>@item.Status</td>
-            </tr>
-        }
-    </table>
-}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Gecmis rezervasyonlar</h4>
+                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-content collapse show">
+                <div class="card-body">
+                    <p class="card-text">Traversal uzerinden yapmis oldugunuz gecmis rezervasyonlarinizi gorebilirsiniz.</p>
+                    <div class="table-responsive">
+                        @if (!Model.Any())
+                        {
+                            <div class="text-danger"><h4>Geçmiş Rezervasyon Yok</h4></div>
+                        }
+                        else
+                        {
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Lokasyon</th>
+                                    <th>Kişi Sayısı</th>
+                                    <th>Rezervason Tarihi</th>
+                                    <th>Durum</th>
+                                </tr>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.RezervationId</td>
+                                        <td>@item.Destination.City</td>
+                                        <td>@item.PersonCount</td>
+                                        <td>@item.RezervassyonDate</td>
+                                        <td>@item.Status</td>
+                                    </tr>
+                                }
+                            </table>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
