@@ -53,7 +53,7 @@ namespace TraversalCoreProject.Controllers
 
             SmtpClient client = new SmtpClient();
             client.Connect("smtp.gmail.com", 587, false);
-            client.Authenticate("furkanturker.dev@gmail.com", "tblv oyrp bmyu jgtw");
+            client.Authenticate("furkanturker.dev@gmail.com", "");
             client.Send(mimeMessage);
             client.Disconnect(true);
 
