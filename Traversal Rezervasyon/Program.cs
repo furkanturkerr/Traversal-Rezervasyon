@@ -9,49 +9,31 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Localization;
 using Traversal_Rezervasyon.CQRS.Handlers.DestinationResult;
 
 var builder = WebApplication.CreateBuilder(args);
-
-
-// ?? Log dosyas?n?n yolu
-var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Logs", "log.txt");
 
 builder.Services.AddScoped<GetAllDestinationQueryHandler>();
 builder.Services.AddScoped<GetDestinationByIdQueryHandler>();
 builder.Services.AddScoped<CreateDestinationComandHandler>();
 builder.Services.AddScoped<RemoveDestinationCommandHandler>();
 builder.Services.AddScoped<UpdateDestinationCommendHendler>();
-builder.Services.AddScoped<UpdateDestinationCommendHendler>();
 
 builder.Services.AddMediatR(typeof(Program));
 
-
 builder.Services.AddLogging(x =>
 {
-    x.ClearProviders();// Varsay?lan log sa?lay?c?lar?n? temizle
+    x.ClearProviders();
     x.SetMinimumLevel(LogLevel.Debug);
-    x.AddDebug();// Debug output'a loglama
+    x.AddDebug();
 });
 
-builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-
-builder.Services
-    .AddControllersWithViews()
-    .AddViewLocalization()
-    .AddDataAnnotationsLocalization();
-
+builder.Services.AddLocalization();
 
 builder.Services.AddHttpClient();
-
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/Login/SignIn";
-});
-
-builder.Services.AddControllersWithViews();
-//builder.Services.AddDbContext<Context>();
 
 var providerSetting = builder.Configuration["DatabaseProvider"];
 var isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
@@ -63,7 +45,6 @@ builder.Services.AddDbContext<Context>(options =>
     }
     else
     {
-        // Mac + Linux varsayılan: Postgres
         options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres"));
     }
 });
@@ -81,21 +62,20 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
-
-
 builder.Services.ContainerDependencies();
-
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.CustomValidation();
-builder.Services.AddControllersWithViews().AddFluentValidation();
 
-builder.Services.AddMvc(config =>
+builder.Services.AddControllersWithViews(config =>
 {
     var policy = new AuthorizationPolicyBuilder()
         .RequireAuthenticatedUser()
         .Build();
     config.Filters.Add(new AuthorizeFilter(policy));
-});
+})
+.AddFluentValidation()
+.AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+.AddDataAnnotationsLocalization();
 
 var app = builder.Build();
 
@@ -105,14 +85,13 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-var supportedCultures = new[] { "tr-TR", "en-US" };
+var supportedCultures = new[] { "tr", "en" };
 var localizationOptions = new RequestLocalizationOptions()
     .SetDefaultCulture(supportedCultures[0])
     .AddSupportedCultures(supportedCultures)
     .AddSupportedUICultures(supportedCultures);
 
 app.UseRequestLocalization(localizationOptions);
-
 
 app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404/", "?code={0}");
 app.UseHttpsRedirection();

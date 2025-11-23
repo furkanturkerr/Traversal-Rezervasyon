@@ -602,3 +602,13 @@ C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/bin/Debug/net8.0/
 /Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal Rezervasyon.pdb
 /Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal Rezervasyon.genruntimeconfig.cache
 /Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/ref/Traversal Rezervasyon.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/bin/Debug/net8.0/en/Traversal Rezervasyon.resources.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal Rezervasyon.csproj.GenerateResource.cache
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/en/Traversal Rezervasyon.resources.cs
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/en/Traversal Rezervasyon.resources.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/bin/Debug/net8.0/tr/Traversal Rezervasyon.resources.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/tr/Traversal Rezervasyon.resources.cs
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/tr/Traversal Rezervasyon.resources.dll
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal_Rezervasyon.Resources.Information.resources
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal_Rezervasyon.Resources.Information.en.resources
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal_Rezervasyon.Resources.Information.tr.resources

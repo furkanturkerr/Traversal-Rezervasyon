@@ -1,0 +1,49 @@
+@using Traversal_Rezervasyon
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Information> L
+@{
+    Layout = "_MemberLayout";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Çoklu Dil Desteği</h4>
+                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                        <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                        <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+                        <li><a data-action="close"><i class="ft-x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-content collapse show">
+                <div class="card-body">
+                    <p class="card-text">@L["Merhaba"]</p>
+                    <div class="table-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>UICulture: @System.Threading.Thread.CurrentThread.CurrentUICulture</p>
+<p>Culture: @System.Threading.Thread.CurrentThread.CurrentCulture</p>
+<p class="card-text">@L["Merhaba"]</p>
+
+@using Microsoft.Extensions.Localization
+@using Microsoft.VisualBasic
+@using Traversal_Rezervasyon.Resources
+@using Information = Traversal_Rezervasyon.Resources.Information
+@inject IStringLocalizerFactory factory
+
+@{
+    var testLoc = factory.Create("Views.Information.Index", 
+        System.Reflection.Assembly.GetExecutingAssembly().GetName().Name!);
+}
+
+<p>Test Localizer: @testLoc["Merhaba"]</p>
+<p>View Localizer: @L["Merhaba"]</p>

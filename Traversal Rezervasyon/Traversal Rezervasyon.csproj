@@ -66,10 +66,41 @@
 
     <ItemGroup>
       <Compile Include="wwwroot\Logs\log.txt.cs" />
+      <Compile Update="Resources\Views\Information\Index.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Index.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Resources\Information.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Information.resx</DependentUpon>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
       <AdditionalFiles Include="Views\Excel\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\Views\Information\Index.en.resx">
+        <LastGenOutput>Index.en.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\Views\Information\Index.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>index.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\Views\Information\Index.resx">
+        <LastGenOutput>Index.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\Information\Index.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Index.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\Information.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Information.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
 </Project>
