@@ -312,6 +312,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVtYmVyTGF5b3V0UGFydGlhbC9fU2NyaXB0UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/Views/PasswordChange/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFzc3dvcmRDaGFuZ2UvRm9yZ2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/Views/PasswordChange/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFzc3dvcmRDaGFuZ2UvUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/Views/Shared/Components/_AdminDashboardHeader/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0FkbWluRGFzaGJvYXJkSGVhZGVyL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -50,8 +50,9 @@ builder.Services.AddDbContext<Context>(options =>
 });
 
 builder.Services
-    .AddIdentity<AppUser, AppRole>() 
-    .AddEntityFrameworkStores<Context>()  
+    .AddIdentity<AppUser, AppRole>()
+    .AddTokenProvider<DataProtectorTokenProvider<AppUser>>(TokenOptions.DefaultProvider)
+    .AddEntityFrameworkStores<Context>()
     .AddDefaultTokenProviders();
 
 builder.Services.ConfigureApplicationCookie(options =>

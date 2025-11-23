@@ -104,5 +104,11 @@ namespace Traversal_Rezervasyon.Resources {
                 return ResourceManager.GetString("Çıkış Yap", resourceCulture);
             }
         }
+        
+        internal static string Rezervasyonlar {
+            get {
+                return ResourceManager.GetString("Rezervasyonlar", resourceCulture);
+            }
+        }
     }
 }
