@@ -41,4 +41,20 @@
     <data name="Tur Rotaları" xml:space="preserve">
         <value>Tour Routes</value>
     </data>
+    <data name="Geçmiş rez." xml:space="preserve">
+        <value>Past reserve.</value>
+    </data>
+    <data name="Onay Bekleyen Rez." xml:space="preserve">
+        <value>Reserve Awaiting Approval</value>
+    </data>
+    <data name="Yeni Rez." xml:space="preserve">
+        <value>New Res.
+</value>
+    </data>
+    <data name="Anasayfa" xml:space="preserve">
+        <value>HomePage</value>
+    </data>
+    <data name="Aktif Rez." xml:space="preserve">
+        <value>Active Res.</value>
+    </data>
 </root>

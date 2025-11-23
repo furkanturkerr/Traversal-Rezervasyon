@@ -41,4 +41,19 @@
     <data name="Aktif Rezervasyonlar" xml:space="preserve">
         <value>Aktif Rezervasyonlar</value>
     </data>
+    <data name="Geçmiş rez." xml:space="preserve">
+        <value>Geçmiş rez.</value>
+    </data>
+    <data name="Onay Bekleyen Rez." xml:space="preserve">
+        <value>Onay Bekleyen Rez.</value>
+    </data>
+    <data name="Yeni Rez." xml:space="preserve">
+        <value>Yeni Rez.</value>
+    </data>
+    <data name="Aktif Rez." xml:space="preserve">
+        <value>Aktif Rez.</value>
+    </data>
+    <data name="Anasayfa" xml:space="preserve">
+        <value>Anasayfa</value>
+    </data>
 </root>

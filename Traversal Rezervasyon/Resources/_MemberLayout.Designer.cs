@@ -105,9 +105,33 @@ namespace Traversal_Rezervasyon.Resources {
             }
         }
         
-        internal static string Rezervasyonlar {
+        internal static string Geçmiş_rez_ {
             get {
-                return ResourceManager.GetString("Rezervasyonlar", resourceCulture);
+                return ResourceManager.GetString("Geçmiş rez.", resourceCulture);
+            }
+        }
+        
+        internal static string Onay_Bekleyen_Rez_ {
+            get {
+                return ResourceManager.GetString("Onay Bekleyen Rez.", resourceCulture);
+            }
+        }
+        
+        internal static string Yeni_Rez_ {
+            get {
+                return ResourceManager.GetString("Yeni Rez.", resourceCulture);
+            }
+        }
+        
+        internal static string Aktif_Rez_ {
+            get {
+                return ResourceManager.GetString("Aktif Rez.", resourceCulture);
+            }
+        }
+        
+        internal static string Anasayfa {
+            get {
+                return ResourceManager.GetString("Anasayfa", resourceCulture);
             }
         }
     }
