@@ -1,4 +1,7 @@
-@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@using Traversal_Rezervasyon
+@using Traversal_Rezervasyon.Resources
+@inject Microsoft.Extensions.Localization.IStringLocalizer<_MemberLayout> localizer
+
 @{
     Layout = null;
 }
@@ -42,34 +45,34 @@
                     <a href="/Member/Dashboard/MemberDashboard/"><i class="ft-home"></i><span class="menu-title" data-i18n="">dashboard</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Member/Profile/Index/"><i class="ft-pie-chart"></i><span class="menu-title" data-i18n="">@localizer["profilim"]</span></a>
+                    <a href="/Member/Profile/Index/"><i class="ft-pie-chart"></i><span class="menu-title" data-i18n="">@localizer["Profilim"]</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Member/Reservation/MyCurrentReservation/"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">@localizer["aktif rez."]</span></a>
+                    <a href="/Member/Reservation/MyCurrentReservation/"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">@localizer["Aktif Rezervasyonlar"]</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Member/Reservation/MyOldReservation/"><i class="ft-layers"></i><span class="menu-title" data-i18n="">@localizer["gecmis rez."]</span></a>
+                    <a href="/Member/Reservation/MyOldReservation/"><i class="ft-layers"></i><span class="menu-title" data-i18n="">@localizer["Geçmiş Rezervasyonlar"]</span></a>
                 </li>
                 <li class="active">
-                    <a href="/Member/Reservation/MyApprovalReservation/"><i class="ft-box"></i><span class="menu-title" data-i18n="">@localizer["onay bekleyen rez."]</span></a>
+                    <a href="/Member/Reservation/MyApprovalReservation/"><i class="ft-box"></i><span class="menu-title" data-i18n="">@localizer["Onay Bekleyen Rezervasyonlar"]</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Member/Reservation/NewReservation/"><i class="ft-bold"></i><span class="menu-title" data-i18n="">@localizer["yeni rez."]</span></a>
+                    <a href="/Member/Reservation/NewReservation/"><i class="ft-bold"></i><span class="menu-title" data-i18n="">@localizer["Yeni Rezervasyonlar"]</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Member/Comment/Index/"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">@localizer["yorumlarim"]</span></a>
+                    <a href="/Member/Comment/Index/"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">@localizer["Yorumlarım"]</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Member/Destination/Index/"><i class="ft-layout"></i><span class="menu-title" data-i18n="">@localizer["tur rotalari"]</span></a>
+                    <a href="/Member/Destination/Index/"><i class="ft-layout"></i><span class="menu-title" data-i18n="">@localizer["Tur Rotaları"]</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Member/LastDestinations/Index/"><i class="ft-layout"></i><span class="menu-title" data-i18n="">@localizer["son rotalar"]</span></a>
+                    <a href="/Member/LastDestinations/Index/"><i class="ft-layout"></i><span class="menu-title" data-i18n="">@localizer["Son Rotalar"]</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Default/Index/"><i class="ft-layout"></i><span class="menu-title" data-i18n="">@localizer["siteye git"]</span></a>
+                    <a href="/Default/Index/"><i class="ft-layout"></i><span class="menu-title" data-i18n="">@localizer["Siteye Git"]</span></a>
                 </li>
                 <li class=" nav-item">
-                    <a href="#"><i class="ft-layout"></i><span class="menu-title" data-i18n="">@localizer["cikis yap"]</span></a>
+                    <a href="#"><i class="ft-layout"></i><span class="menu-title" data-i18n="">@localizer["Çıkış Yap"]</span></a>
                 </li>
             </ul>
 

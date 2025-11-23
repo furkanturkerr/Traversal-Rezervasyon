@@ -1,0 +1,44 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Profilim" xml:space="preserve">
+        <value>Profilim</value>
+    </data>
+    <data name="Çıkış Yap" xml:space="preserve">
+        <value>Çıkış Yap</value>
+    </data>
+    <data name="Yeni Rezervasyonlar" xml:space="preserve">
+        <value>Yeni Rezervasyonlar</value>
+    </data>
+    <data name="Yorumlarım" xml:space="preserve">
+        <value>Yorumlarım</value>
+    </data>
+    <data name="Tur Rotaları" xml:space="preserve">
+        <value>Tur Rotaları</value>
+    </data>
+    <data name="Son Rotalar" xml:space="preserve">
+        <value>Son Rotalar</value>
+    </data>
+    <data name="Siteye Git" xml:space="preserve">
+        <value>Siteye Git</value>
+    </data>
+    <data name="Onay Bekleyen Rezervasyonlar" xml:space="preserve">
+        <value>Onay Bekleyen Rezervasyonlar</value>
+    </data>
+    <data name="Geçmiş Rezervasyonlar" xml:space="preserve">
+        <value>Geçmiş Rezervasyonlar</value>
+    </data>
+    <data name="Aktif Rezervasyonlar" xml:space="preserve">
+        <value>Aktif Rezervasyonlar</value>
+    </data>
+</root>

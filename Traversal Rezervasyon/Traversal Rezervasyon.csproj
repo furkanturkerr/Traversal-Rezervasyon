@@ -76,6 +76,11 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>Information.resx</DependentUpon>
       </Compile>
+      <Compile Update="Resources\_MemberLayout.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>_MemberLayout.resx</DependentUpon>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
@@ -100,6 +105,10 @@
       <EmbeddedResource Update="Resources\Information.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Information.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Resources\_MemberLayout.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>_MemberLayout.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
 
