@@ -48192,6 +48192,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\userimages\63c89ae0-cdca-4b39-9c6c-ec9213330292.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\userimages\cc8597e2-f1ec-4297-b92d-5e00a67580eb.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Traversal Rezervasyon</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Traversal Rezervasyon</BasePath>
+      <RelativePath>userimages/cc8597e2-f1ec-4297-b92d-5e00a67580eb.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\userimages\cc8597e2-f1ec-4297-b92d-5e00a67580eb.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\userimages\ef0ff44f-b041-4660-b47d-c70600fc9bf2.png))">
       <SourceType>Package</SourceType>
       <SourceId>Traversal Rezervasyon</SourceId>

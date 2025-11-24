@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4dGKJdCWZltIgnkXCND6obm69GKWMib7c+Y08dbdqBc=",
+  "Hash": "CtBl1naltdHaJ2jaWD2Cyct4zOv6OHhmLWIprco4z5U=",
   "Source": "Traversal Rezervasyon",
   "BasePath": "_content/Traversal Rezervasyon",
   "Mode": "Default",
@@ -57262,6 +57262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/userimages/63c89ae0-cdca-4b39-9c6c-ec9213330292.png"
+    },
+    {
+      "Identity": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/wwwroot/userimages/cc8597e2-f1ec-4297-b92d-5e00a67580eb.png",
+      "SourceId": "Traversal Rezervasyon",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/wwwroot/",
+      "BasePath": "_content/Traversal Rezervasyon",
+      "RelativePath": "userimages/cc8597e2-f1ec-4297-b92d-5e00a67580eb.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/userimages/cc8597e2-f1ec-4297-b92d-5e00a67580eb.png"
     },
     {
       "Identity": "/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/wwwroot/userimages/ef0ff44f-b041-4660-b47d-c70600fc9bf2.png",
