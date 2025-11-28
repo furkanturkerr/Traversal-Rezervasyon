@@ -615,3 +615,4 @@ C:/Users/Furkan/MY/Traversal Rezervasyon/Traversal Rezervasyon/bin/Debug/net8.0/
 /Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal_Rezervasyon.Resources._MemberLayout.resources
 /Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal_Rezervasyon.Resources._MemberLayout.en.resources
 /Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/obj/Debug/net8.0/Traversal_Rezervasyon.Resources._MemberLayout.tr.resources
+/Users/furkanturker/RiderProjects/Traversal-RezervasyonMac/Traversal Rezervasyon/bin/Debug/net8.0/libman.json
