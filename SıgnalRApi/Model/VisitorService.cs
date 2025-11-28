@@ -34,7 +34,7 @@ public class VisitorService
         List<VisitorChart> visitorCharts = new List<VisitorChart>();
         using (var comand = _context.Database.GetDbConnection().CreateCommand())
         {
-            comand.CommandText = "query sorgu";
+            comand.CommandText = "Select * From crosstab ( 'Select VisitDate,City,CityVisitCount From Visitors Order By 1, 2') As ct(VisitDate date,City1 int, City2 int, City3 int, City4 int, City5 int);";
             comand.CommandType = System.Data.CommandType.Text;
             _context.Database.OpenConnection();
             using (var reader = comand.ExecuteReader())

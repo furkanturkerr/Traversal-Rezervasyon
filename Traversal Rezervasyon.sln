@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOLayer", "DTOLayer\DTOLay
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SıgnalRApi", "SıgnalRApi\SıgnalRApi.csproj", "{3094CF8F-53B6-479B-9C98-B6FFDB1F8B2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SıgnalRConsume", "SıgnalRConsume\SıgnalRConsume.csproj", "{3C75295E-9A3C-4F1D-A7B9-3A72D3508A4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{3094CF8F-53B6-479B-9C98-B6FFDB1F8B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3094CF8F-53B6-479B-9C98-B6FFDB1F8B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3094CF8F-53B6-479B-9C98-B6FFDB1F8B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C75295E-9A3C-4F1D-A7B9-3A72D3508A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C75295E-9A3C-4F1D-A7B9-3A72D3508A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C75295E-9A3C-4F1D-A7B9-3A72D3508A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C75295E-9A3C-4F1D-A7B9-3A72D3508A4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

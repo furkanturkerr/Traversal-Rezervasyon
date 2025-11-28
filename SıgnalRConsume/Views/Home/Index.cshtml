@@ -1,0 +1,35 @@
+﻿@{
+ViewData["Title"] = "Home Page";
+}
+
+@section Scripts{
+<script src="~/lib/microsoft-signalr/signalr.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(()=>{
+
+        // HTTPS değil, HTTP protokolü ve 5247 portu
+        var connection = new signalR.HubConnectionBuilder()
+            .withUrl("http://localhost:5247/VisitorHub")
+            .build();
+
+        $("#connectionStatus").text("Bağlanıyor...");
+
+        connection.start().then(()=>{
+            $("#connectionStatus").text("Bağlantı Başarılı: " + connection.state);
+            $("#connectionStatus").css("color", "green");
+        }).catch((error)=>{
+            console.log(error);
+            $("#connectionStatus").text("Hata Oluştu: " + error.toString());
+            $("#connectionStatus").css("color", "red");
+        });
+    })
+</script>
+}
+
+<div class="container">
+    <br />
+    <div class="alert alert-warning">
+        baglantinizin durumu: <b id="connectionStatus"></b>
+    </div>
+</div>

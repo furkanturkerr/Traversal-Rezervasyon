@@ -1,15 +1,26 @@
 using Microsoft.EntityFrameworkCore;
 using SıgnalRApi.Dal;
+using SıgnalRApi.Hubs;
 using SıgnalRApi.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Servisler ekleniyor
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSignalR();
+
+// CORS Ayarı: Her yerden gelen isteğe izin ver
+builder.Services.AddCors(options => options.AddPolicy("CorsPolicy",
+    builder =>
+    {
+        builder.AllowAnyHeader()
+            .AllowAnyMethod()
+            .SetIsOriginAllowed((host) => true) 
+            .AllowCredentials();
+    }));
+
 builder.Services.AddControllers();
 builder.Services.AddScoped<VisitorService>();
 
@@ -18,18 +29,22 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<Context>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres"));
 });
 
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// *** DİKKAT: Bu satırı sildik/yorum yaptık. Artık HTTP'yi HTTPS'e zorlamayacak. ***
+// app.UseHttpsRedirection(); 
+
+// CORS Middleware'i
+app.UseCors("CorsPolicy");
+
 app.MapControllers();
+app.MapHub<VisitorHub>("/VisitorHub");
 
 var summaries = new[]
 {
