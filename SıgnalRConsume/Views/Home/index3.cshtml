@@ -1,0 +1,93 @@
+@{
+ViewData["Title"] = "Index3";
+}
+
+@section Scripts
+{
+<script src="~/lib/microsoft-signalr/signalr.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(() => {
+        // Google Charts kütüphanesini baştan yükle
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(() => {
+            // Chart yüklendiğinde bağlantıyı başlatabiliriz
+            startConnection();
+        });
+
+        var visitChartList = new Array();
+        // Başlık satırını ekle
+        visitChartList.push(["Tarih", "Edirne", "Istanbul", "Ankara", "Antalya", "Bursa"]);
+
+        function startConnection(){
+            // *** DİKKAT: Portu 5247 (API Portu) olarak düzelttik ***
+            var connection = new signalR.HubConnectionBuilder()
+                .withUrl("http://localhost:5247/VisitorHub")
+                .build();
+
+            $("#connectionStatus").text("Bağlanıyor...");
+
+            connection.start().then(() => {
+                $("#connectionStatus").text(connection.state);
+                $("#connectionStatus").css("color", "green");
+                // Bağlanınca veriyi iste
+                connection.invoke("GetVisitorList");
+            }).catch((err) => {
+                console.log(err);
+                $("#connectionStatus").text("Bağlantı Hatası: " + err.toString());
+                $("#connectionStatus").css("color", "red");
+            });
+
+            // Veri geldiğinde çalışacak fonksiyon
+            connection.on("ReceiveVisitorList", (visitList) => {
+                console.log("Veri Geldi:", visitList); // Hata ayıklama için konsola yaz
+
+                // Tabloyu sıfırla ama başlığı koru (1. satırdan itibaren sil)
+                // visitChartList = visitChartList.splice(0, 1); // BU HATALIYDI, splice diziyi bozar.
+                // Doğrusu: Sadece başlık kalsın istiyorsak diziyi yeniden oluşturabiliriz veya 1. indexten sonrasını silebiliriz.
+                visitChartList = [["Tarih", "Edirne", "Istanbul", "Ankara", "Antalya", "Bursa"]];
+
+                visitList.forEach((item) => {
+                    visitChartList.push([
+                        item.visitDate,
+                        parseInt(item.counts[0]),
+                        parseInt(item.counts[1]),
+                        parseInt(item.counts[2]),
+                        parseInt(item.counts[3]),
+                        parseInt(item.counts[4])
+                    ]);
+                });
+
+                drawChart();
+            });
+        }
+
+        function drawChart() {
+            // Veri yoksa çizme
+            if(visitChartList.length <= 1) return;
+
+            var data = google.visualization.arrayToDataTable(visitChartList);
+
+            var options = {
+                title: 'Traversal Ziyaretçi Listesi Grafiği',
+                curveType: 'none',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('curve_chart'));
+            chart.draw(data, options);
+        }
+    })
+</script>
+}
+
+<div class="container">
+    <br />
+    <div class="alert alert-warning">
+        Bağlantınızın Durumu: <b id="connectionStatus">Bekleniyor...</b>
+    </div>
+</div>
+<br />
+
+<div id="curve_chart" style="width: 100%; height: 600px"></div>

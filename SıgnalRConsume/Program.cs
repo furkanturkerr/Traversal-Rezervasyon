@@ -16,8 +16,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    // HATA BURADAYDI: {action=} -> {action=Index} OLMALI
+    pattern: "{controller=Home}/{action=Index3}/{id?}");
 
 app.Run();

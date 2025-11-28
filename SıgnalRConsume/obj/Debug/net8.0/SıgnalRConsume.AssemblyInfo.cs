@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SıgnalRConsume")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b105d460b2e56e015f14a747da18111e20a8fe34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17ecd0bd425b0aac97c7bb64020b165941cedafb")]
 [assembly: System.Reflection.AssemblyProductAttribute("SıgnalRConsume")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SıgnalRConsume")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
