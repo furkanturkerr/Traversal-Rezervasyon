@@ -16,8 +16,11 @@ public class VisitorService
         _context = context;
         _visitorHub = visitorHub;
         }
-    
-    public IQueryable<Visitor> GetList=> _context.Visitors.AsQueryable();
+
+    public IQueryable<Visitor> GetList()
+    {
+        return _context.Visitors.AsQueryable();
+    }
 
     public async Task SaveVisitor(Visitor visitor)
     {

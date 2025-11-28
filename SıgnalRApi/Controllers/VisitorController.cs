@@ -24,7 +24,7 @@ public class VisitorController : ControllerBase
                 {
                     ECity = item,
                     CityVisitCount = rnd.Next(100, 200),
-                    VisitDate = DateTime.Now.AddDays(x)
+                    VisitDate = DateTime.UtcNow.AddDays(x)
                 };
                 _visitorService.SaveVisitor(newVisitor).Wait();
                 System.Threading.Thread.Sleep(1000);

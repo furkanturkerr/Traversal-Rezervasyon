@@ -14,6 +14,6 @@ public class VisitorHub : Hub
 
     public async Task GetVisitorList()
     {
-        await Clients.All.SendAsync("CallVisitorList", "_visitorService.GetVisitorChartList()");
+        await Clients.All.SendAsync("CallVisitList", "_visitorService.GetVisitorChartList()");
     }
 }

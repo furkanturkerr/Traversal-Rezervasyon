@@ -9,14 +9,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<VisitorService>();
 builder.Services.AddSignalR();
-
+builder.Services.AddControllers();
+builder.Services.AddScoped<VisitorService>();
 
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<Context>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres"));
 });
+
 
 var app = builder.Build();
 
@@ -28,6 +29,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.MapControllers();
 
 var summaries = new[]
 {

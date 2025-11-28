@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SıgnalRApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1b0b2c7664b58c72fd72c4be11b933db38f16d8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6824d79ff3fd0e4fa8e451177c5027488ef9b6b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SıgnalRApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SıgnalRApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
