@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 **Traversal Rezervasyon Sistemi**
+# 🚀 **Traversal Rezervasyon**
 
 Modern .NET 8 mimarisi ile geliştirilen, çok katmanlı rezervasyon & yönetim platformu.
 
